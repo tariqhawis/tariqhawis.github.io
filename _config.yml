@@ -1,3 +1,3 @@
 url: mr-c0der.github.io
 baseurl: /
-remote_theme: chrisrhymes/bulma-clean-theme
+theme: jekyll-theme-cayman
