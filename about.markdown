@@ -2,7 +2,7 @@
 title: About
 layout: page
 permalink: /about/
-hero_image: "/assets/images/cybersecurity-hero1.jpg"
+hero_image: /assets/images/cybersecurity-hero1.jpg
 ---
 
 ## About Me

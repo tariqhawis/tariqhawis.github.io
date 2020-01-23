@@ -24,8 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   My personal website where I share my research findings, developed tools, and tutorial videos
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "t-hawes.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: cyberhawes
+github_username:  t-hawes
 
 # Build settings
 #theme: bulma-clean-theme
@@ -55,3 +55,9 @@ plugins:
 #   - vendor/ruby/
 paginate: 5
 paginate_path: "/blog/page:num"
+# Disqus Comments
+
+disqus:
+  # Leave shortname blank to disable comments site-wide.
+  # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
+  shortname: proftariq
