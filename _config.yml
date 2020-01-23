@@ -28,8 +28,9 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-theme: bulma-clean-theme
-hero_image: "/assets/images/cybersecurity-hero1.jpg"
+#theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme
+hero_image: assets/images/cybersecurity-hero1.jpg
 plugins:
   - jekyll-feed
 
