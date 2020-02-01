@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Choose The Best Hosting for your website in 2020!
+title: How To Choose A Web Hosting in 2020!
 description: How can you start a secure website without being a cybersecurity expert?
 date: 2020-01-31
 hero_image: /img/select-hosting-hero.jpg
@@ -70,6 +70,6 @@ The main advantage of this type is that you only pay for what you use of service
 Even cloud hosting does not immune from DDoS attack, thus, it is important for the hosting provider to have Anti-DDoS solutions for their network. Such solutions as monitoring and analysis SIEM systems to monitor and analyze your website's traffic and events looking for indicators of DDoS attacks, profiling systems that can learn your application's traffic over time to identify your legitimate traffic, and finally web firewall (WAF) to provide full stack DDoS protection.
 
 
-Now after you choose your best hosting provider for best performance and security, it's time to protect your own website. Check my other post to find out [How To Create A Secure Website] ({% post_url 2020-02-01-how-to-create-a-secure-website-in-2020 %}).
+Now after you choose your best hosting provider for best performance and security, it's time to protect your own website. Check my other post to find out [How To Create A Secure Website] ({% post_url 2020-02-01-how-to-launch-a-secure-website-in-2020 %}).
 
 If you have any question or you think there are other criteria of best hosting, please leave me a comment below.

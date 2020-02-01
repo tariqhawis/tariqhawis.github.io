@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How To Create A Secure Website in 2020!
-description: This article intended to demonstrate for non-technical website owners how can they create a secure website without having security knowledge 
+title: How To Launch A Secure Website in 2020!
+description: How can you create a secure website without having security knowledge 
 date: 2020-02-01
-hero_image: /img/secure-website-hero.jpg
+hero_image: /img/secure-website-hero1.jpg
 hero_height: is-large
-image: /img/secure-website-thumb.jpg
+image: /img/secure-website-hero1.jpg
 tags: web security hacking cybersecurity wordpress jekyll 
 categories: Web Security
 ---
@@ -86,7 +86,7 @@ There are still ever-present security threats that can always be there like some
 
 ## 5. Pick The Right Hosting Company
 
-Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn about in my article [How To Choose The Best Hosting For Your Website]({% post_url 2020-01-31-how-to-choose-the-best-hosting-for-your-website-in-2020 %}).
+Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn more about in my article [How To Choose a Web Hosting]({% post_url 2020-01-31-how-to-choose-a-web-hosting-in-2020 %}).
 
 
 
