@@ -35,4 +35,4 @@ Cybersecurity moves at a fast pace and I enjoy learning new techniques and using
 
 ## Contact Me
 
-If you wish to make contact, why not send me a tweet through [twitter](https://twitter.com/CyberHawes)
+If you wish to make contact, why not send me a tweet through [twitter](https://twitter.com/TariqHawis)

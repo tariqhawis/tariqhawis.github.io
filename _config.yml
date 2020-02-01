@@ -7,7 +7,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis
 github_username:  tariqhawis
-image: /img/landing-hero.jpg
+image: /img/landing-hero1.jpg
 
 
 remote_theme: chrisrhymes/bulma-clean-theme
