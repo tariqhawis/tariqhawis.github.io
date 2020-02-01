@@ -1,13 +1,17 @@
 ---
-title: About
 layout: page
+title: About Me
+order: 5
 permalink: /about/
-hero_image: /assets/images/cybersecurity-hero1.jpg
+description: "Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer and a part time author"
+image: /img/hero4.jpg
+hero_image: /img/hero4.jpg
+toc: true
 ---
 
 ## About Me
 
-Hello and welcome! My name is T. Hawes and I'm a full-time Cybersecurity Engineer. In my spare time, I write posts in my blog, conduct webinar training covering security topics, also have my share with cryptocurrency trading :)
+Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer, my works involves monitoring security events, analyze applications for security flaws, and develop security tools. In my spare time, I follow the last news in cybersecurity and technology worlds, and I also write posts at tariqhawis.com.
 
 
 ## Cybersecurity
