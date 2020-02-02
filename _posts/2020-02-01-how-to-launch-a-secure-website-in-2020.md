@@ -10,17 +10,18 @@ tags: web security hacking cybersecurity wordpress jekyll
 categories: Web Security
 ---
 
-This article intended to demonstrate for non-technical website owners how can they create a secure website without having security knowledge.
+If you have searched in the Internet how to secure a website before you end-up here, then you might overwhelmed with the complicated security guidelines which are meant to be for the web developers and Cybersecurity experts, but who said that you have to be like one of those nerds to have a protected website!
 
+Let me reveal to you some secretes that no technical guy will tell you about, because these secretes will let you build your own website even if have zero knowledge with websites.
 
-If you have searched in the Internet how to secure a website before you end-up here, you might overwhelmed with the complicated security guidelines, such as the amazing  [TOP 10 Project from OWASP](https://owasp.org/www-project-top-ten/). However, these kind of guidelines are mostly meant to be for the web developers and Cybersecurity experts. But man! who said that you need to be a technical geek to have a wonderful secure website? If you are that kind of person who need a shortcut way for a secure website, then you come to the right place!
+So let's get started.
 
 
 ## 1. Make it simple!
 
 Simple website means fast, and secure..
 
-The way to do that is to build a site that focus only on your content, and the better choice for this goal is the static site.
+The way to do that is to build a site that focus only on your content, and the better choice for this goal is to build a static site.
 
 ### 1.1. What is a static site?
 
@@ -40,12 +41,14 @@ OK then, How are you going to build a static site? Well, first of all you need t
 
 What you actually need to do is to pick one of static site generators which will take care of the coding stuff and let you focus on your content only. The most popular SSGs these days are Jekyll, Middleman, Roots, and Hugo. To me Jekyll is my favorite, like this site is build on it!
 
-So now how it works? first you need to follow the SSGs instructions, as for [jekyll](https://jekyllrb.com/docs/installation), you need to have ruby on your machine as described in above line, then you install bundler/jekyll gems. After that everything becomes very easy, with three magic words on your terminal you can build your entire site project:
+So now how it works? first you need to follow the SSGs instructions, as for [jekyll](https://jekyllrb.com/docs/installation), you need to have ruby on your machine as described in above line, then you install bundler/jekyll gems. Next everything becomes very easy, with three magic words on your terminal you can build your entire site project:
 
 ```shell
 jekyll new myblog
 ```
-Wait for few seconds Et Voila! you built a complete project. No PHP or database needed. Now you may waiting for the step we all hating which is setting up apache configuration with needed directives and modules to enable... No! here you you don't need all that ugly stuff. All you need is to run another tiny command so jekyll will build and compile all pages:
+Wait for few seconds... Et Voila! you just built a complete project. No code or database needed. 
+
+Now you may thing that I'm going to tell you how to setup your apache, but no! Here the things is much easier, what you only need to run your site locally by running another tiny command so jekyll will build and compile all pages:
 
 ```shell
 bundle exec jekyll serve
@@ -56,11 +59,11 @@ after few seconds you will see on terminal the last two lines:
 Server address: http://127.0.0.1:4000/
 Server running... press ctrl-c to stop.
 ```
-It means your site is ready, to open it, open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/) you will see a default page from jekyll welcoming you to jekyll like this one: 
+It means your site is ready. Now open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/) you will see a default page from jekyll welcoming you to jekyll like this one: 
 
 ![New Jekyll Site](/assets/images/new-jekyll-site.png) 
 
-Afterward to learn more on how to build a jekyll site from scratch, go and visit jekyll's [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/).
+Afterward to learn more on how to create a wonderful website, go ahead and visit jekyll's [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/), you will learn it in no time.
 
 
 ## 3. Avoid Popular CMS Platforms!
