@@ -89,8 +89,8 @@ There are still ever-present security threats that can always be there like some
 
 ## 5. Pick The Right Hosting Company
 
-Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn more about in my article [How To Choose a Web Hosting]({% post_url 2020-01-31-how-to-choose-a-web-hosting-in-2020 %}).
+Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn more about in my article [How To find the best web hosting for your website]({% post_url 2020-01-31-how-to-find-the-best-web-hosting-in-2020 %}).
 
 
 
-So That's all I can tell you about creating a secure and fast site for non-technical owners. I hope you enjoyed reading. If you have any opinion or you think there are other options that I need to add, please leave me a comment.
+So That's all I can tell you about creating a secure and fast site for non-technical owners. I hope you enjoyed reading. If you have any opinion or you think there are other options that I need to add, please leave me a comment, or send me a message over [twitter](https://www.twitter.com/tariqhawis) or [facebook](https://www.facebook.com/Tariq-Hawis-102907161281331/)
