@@ -1,11 +1,11 @@
 ---
 layout: post
-title: How To Launch A Secure Website in 2020!
+title: How To Launch A Secure Website In 2020!
 description: How can you create a secure website without having security knowledge 
 date: 2020-02-01
-hero_image: /img/secure-website-hero1.jpg
+hero_image: /img/secure-website-hero2.jpg
 hero_height: is-large
-image: /img/secure-website-hero1.jpg
+image: /img/secure-website-hero2.jpg
 tags: web security hacking cybersecurity wordpress jekyll 
 categories: Web Security
 ---
