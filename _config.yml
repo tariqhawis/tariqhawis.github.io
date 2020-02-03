@@ -82,13 +82,13 @@ lang: en_US
 twitter:
   username: TariqHawis
   card: summary_large_image
-#facebook:
-#  publisher: https://www.facebook.com/
+facebook:
+  publisher: https://www.facebook.com/Tariq-Hawis-102907161281331/
 social:
   name: Tariq Hawis
   links:
     - https://www.twitter.com/tariqhawis
-    #- https://www.facebook.com/
+    - https://www.facebook.com/Tariq-Hawis-102907161281331/
     - https://github.com/tariqhawis
 
 #feed:
