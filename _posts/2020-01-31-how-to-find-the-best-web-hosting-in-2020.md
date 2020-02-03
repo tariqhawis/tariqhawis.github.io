@@ -19,7 +19,7 @@ Moreover, the type of web hosting may plays a big role, such as shared hosting, 
 
 # Shared Hosting
 
-This is the best choice for your pocket due to its cheap cost. When choosing a shared hosting plan you will get some basic stuff for your website to be operational, things like storage space where you can upload your websites page, support for database like MySQL, some web languages like php/ruby/python and/or CMS platforms like Wordpress/Joomla, Management portal to control your site like cPanel/Webmin, FTP access (to upload website pages from your machine), and email address. Also, you will have the ability to configure your own domain address so it can point to your site, get a free SSL certificate, and a small amount of bandwidth enough to run a small website with some pages and images.
+This is the best choice for your pocket due to its cheap cost. When choosing a shared hosting plan you will get some basic stuff for your website to be operational, things like storage space where you can upload your websites page, support for database like MySQL, some web languages like php/ruby/python and/or CMS platforms like Wordpress/Joomla, Management portal to control your site like cPanel/Webmin, FTP access (to upload website pages from your machine), and email address. Also, you will have the ability to configure your own domain address so it can point to your site, get a free SSL certificate, and a small amount of [bandwidth](https://en.wikipedia.org/wiki/Bandwidth_(computing)) enough to run a small website with some pages and images.
 
 People who choose this kind of hosting are looking to run their site in its early stages since there will be no much visitors expected, or they just looking for an affordable place to their blog without worrying about high bills at the end of the month!
 
@@ -28,25 +28,25 @@ This type of hosting, however, has some limitations, it terms of hardware and ne
 
 ### Security Advice
 
-As I stated above, this type of hosting is good for the early stages of a web business, since you don't want to waste more money on newborn website that still unknown for search engines and social media. However, as time goes by, when your site is noticbly grown and have hundreds or thousands of visitors a day, then your website may start facing some performace issues, and/or web attacks, since your site will become noticed on the internet which includes of course the hackers. At this point, you needto to start searching of a better kind of hosting.
+As I stated above, this type of hosting is good for the early stages of a web business, since you don't want to waste more money on newborn website that still unknown for search engines and social media. However, as time goes by, when your site has grown and gets hundreds or thousands of visitors a day, then your website may start facing some performance issues, and/or [cyber attacks](https://en.wikipedia.org/wiki/Cyberattack), since your site become noticed on the internet from many people including - of course - the hackers. At this point, you need to start searching of a better kind of hosting.
 
 
 # Virtual Private Server Hosting (VPS)
 
-VPS is the type that resides in the middle between shared hosting and dedicated server, since it provides you a complete control over the operating system, so you can login remotely with administrator account (root for linux) and change whatever packages or configurations you want. Also, unlike shared hosting, you will get a basic guaranteed resource capacities of disk space, CPU, RAM, bandwidth. So you may see in the plan the word "from" before the specification, means that this value will be the ground of the resources that will not be decreased below it.
+[VPS](https://en.wikipedia.org/wiki/Virtual_private_server) is the type of hosting that resides in the middle between shared hosting and dedicated server, since it provides you a complete control over the operating system, so you can login remotely with administrator account (root for linux) and change whatever packages or configurations you want. Also, unlike shared hosting, you will get a basic guaranteed resource capacities of disk space, CPU, RAM, bandwidth. So you may see in the plan the word "from" before the specification, means that this value will be the ground of the resources that will not be decreased below it.
 
 That said, your hardware and network resources are still somehow shared with other virtual servers that are running on the server, which means the site performance will effected as well by the overall performance and the health status of the main server.
 
 ### Security Advice
 
-Unlike with shared hosting, your website will be isolated by the disk storage from the other VPS owners on the main server, that means you will not affected by some sort of web attacks like the web application vulnerabilities. However, attacks like [DDoS (Distributed Denial of Service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) may still affecting your VPS performance once it targeted any of the other VPS or the main server.
+Unlike with shared hosting, your website will be isolated by the disk storage from the other VPS owners on the main server, that means you will not affected by some sort of web attacks like [the web application vulnerabilities](https://en.wikipedia.org/wiki/Vulnerability_(computing)). However, attacks like [DDoS (Distributed Denial of Service)](https://en.wikipedia.org/wiki/Denial-of-service_attack) may still affecting your VPS performance once it targeted any of the other VPS or the main server.
 
-Therefore, you need to make sure that the hosting company is providing some descent solutions to protect against DDoS attacks, like having firewall with anti-DDoS capabilities that can distinguish between the attack traffic and block it while the Legitimate traffic can reach the server. Also the company should provide enough bandwidth capacity for your site, depending on how much traffic you are getting (there are many tools that can help measuring, like AWStats). These things is mandatory for you site to resists this kind of attacks. 
+Therefore, you need to make sure that the hosting company is providing some descent solutions to protect against DDoS attacks, like having firewall with anti-DDoS capabilities that can distinguish between the attack traffic and block it while the Legitimate traffic can reach the server. Also the company should provide enough bandwidth capacity for your site, depending on how much traffic you are getting (there are many tools that can help measuring, like [AWStats](https://awstats.sourceforge.i)). These things is mandatory for you site to resists this kind of attacks. 
 
 
 # Dedicated Server Hosting
 
-This is the type where you have the control over everything in your server, from security to operating system. That because the hardware resources will "dedicated" for you. However, this type of servers is the most expensive one among the other types which may range between $60-80 up to hundreds of dollars, therefore, it used by people who have high website traffic and resource usage, like big companies, universities, researching centers, and for gaming and live streaming.
+Dedicated Server is the type where you have the control over everything in your server, from security to operating system. That because the hardware resources will "dedicated" for you. However, this type of servers is the most expensive one among the other types which may range between $60-80 up to hundreds of dollars, therefore, it used by people who have high website traffic and resource usage, like big companies, universities, researching centers, and for gaming and live streaming.
 
 
 ### Security Advice
