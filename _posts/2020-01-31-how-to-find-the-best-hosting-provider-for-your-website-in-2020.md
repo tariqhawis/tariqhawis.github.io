@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Find the Best Web Hosting in 2020!
+title: How to Find the Best Hosting Provider for your Website in 2020!
 description: Here I will show you my tips to find the best web hosting the you need for your website.  
 date: 2020-01-31
 hero_image: /img/select-hosting-hero.jpg
@@ -69,5 +69,6 @@ Even cloud hosting does not immune from DDoS attack. However, the big giant comp
 
 
 Now after you choose the right hosting provider for you website, it's time to protect your own website. Check my other post to find out [How to create a secure website]({% post_url 2020-02-01-how-to-launch-a-secure-website-in-2020 %}).
+
 
 If you have any question or you think there are other criteria of best hosting, please leave me a comment below , or send me a message over [twitter](https://www.twitter.com/tariqhawis) or [facebook](https://www.facebook.com/Tariq-Hawis-102907161281331/)
