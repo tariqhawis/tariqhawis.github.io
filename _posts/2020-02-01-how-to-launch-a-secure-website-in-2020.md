@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How To Launch A Secure Website In 2020!
+title: How to Launch a Secure Website in 2020!
 description: How can you create a secure website without having security knowledge 
 date: 2020-02-01
 hero_image: /img/secure-website-hero2.jpg
@@ -10,20 +10,20 @@ tags: web security hacking cybersecurity wordpress jekyll
 categories: Web Security
 ---
 
-If you have searched in the Internet how to secure a website before you end-up here, then you might overwhelmed with the complicated security guidelines which are meant to be for the web developers and Cybersecurity experts, but who said that you have to be like one of those nerds to have a protected website!
+If you have searched in the Internet how to secure a website before you end-up here, then you might overwhelmed with the complicated security guidelines which are meant to be for the web developers and cyber security experts, but who said that you have to be like one of those nerds to have a protected website!
 
 Let me reveal to you some secretes that no technical guy will tell you about, because these secretes will let you build your own website even if have zero knowledge with websites.
 
 So let's get started.
 
 
-## 1. Make it simple!
+## 1. Make it Simple!
 
 Simple website means fast, and secure..
 
 The way to do that is to build a site that focus only on your content, and the better choice for this goal is to build a static site.
 
-### 1.1. What is a static site?
+### 1.1. What is a Static Site?
 
 In the world of web there are two kind of websites, static and dynamic. The first one means your site is build on HTML pages - with other objects like Javascript, CSS, image files - in other words, it has nothing to process from the server-end, an ready bread for your browser to eat.. I mean to present.
 
@@ -34,14 +34,14 @@ Just by realize this comparison you can conclude that the fastest and secure way
 Static sites are becoming more and more common thing now a days, there are even some bloggers presume that static sites is the future of the web, personally I couldn't agree more. Why? because what is the real matters to any website owner is his content only, everything else comes next. So why bother make OS-size website with plugins, database, and programming framework (like java, .NET...) only to serve few pages of yours and end up with vulnerable site to the cyber attacks and malware infections.
 
 
-### 1.2. How to Build a static site?
+### 1.2. How to Build a Satic Site?
 
-OK then, How are you going to build a static site? Well, first of all you need to lean how to code with HTML and Javascript... wait WHAT?! 
+OK then, how are you going to build a static site? Well, first of all you need to lean how to code with HTML and Javascript... wait WHAT?! 
 ... just kidding! :)
 
 What you actually need to do is to pick one of static site generators which will take care of the coding stuff and let you focus on your content only. The most popular SSGs these days are Jekyll, Middleman, Roots, and Hugo. To me Jekyll is my favorite, like this site is build on it!
 
-So now how it works? first you need to follow the SSGs instructions, as for [jekyll](https://jekyllrb.com/docs/installation), you need to have ruby on your machine as described in above line, then you install bundler/jekyll gems. Next everything becomes very easy, with three magic words on your terminal you can build your entire site project:
+So now how it works? First you need to follow the SSGs instructions, as for [jekyll](https://jekyllrb.com/docs/installation), you need to have ruby on your machine as described in above line, then you install bundler/jekyll gems. Next everything becomes very easy, with three magic words on your terminal you can build your entire site project:
 
 ```shell
 jekyll new myblog
@@ -87,9 +87,9 @@ So you stayed away from Dynamic/database site. What now, does my website become 
 
 There are still ever-present security threats that can always be there like someone getting your credentials for your server. So you need to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody). 
 
-## 5. Pick The Right Hosting Company
+## 5. Pick the Right Hosting Company
 
-Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn more about in my article [How To find the best web hosting for your website]({% post_url 2020-01-31-how-to-find-the-best-web-hosting-in-2020 %}).
+Choosing the best hosting company and plan for your website is not an easy task. But it also a must step in your plan for web marketing, because the right choice will save you a lot of money that you needed most to improve your own business. That what you can learn more about in my article [How to find the best web hosting for your website]({% post_url 2020-01-31-how-to-find-the-best-web-hosting-in-2020 %}).
 
 
 
