@@ -83,24 +83,22 @@ Afterward to learn more on how to create a wonderful website, go ahead and visit
 
 ## 3. Pick the Right Hosting Provider
 
-After you built your website, you need two things, a hosting space where you can upload your site's files - using FTP service or so - and a domain name point to it, something like yourname.com, so anyone can reach your website by typing this name in their Internet browser.
+After you built your website, you need two things, a hosting space where you can upload your site's files - using FTP service or so - and a domain name points to it -something like yourname.com- so anyone can reach your website by typing this name in their Internet browser.
 
-Finding the best hosting provider and the plan that suite you needs is not easy, and a very important step. I don't ever recommend to purchase just any provider and a plan just because you hear many people are using it or because it's a cheap one. Believe me, it's worth your time to find the best place for your site.
+Finding the best hosting provider and the plan that suites your needs is not easy, but it's a very important step. Believe me, it's worth your time to find the best place for your site. You need the right hosting provider and the plan that gives your site the proper security with a decent overall performance so you will have the peace of mind at the end.
 
-Finding the right hosting provider and the plan that gives your site the proper security with a decent overall performance will get you the peace of mind.
-
-[Find out the best hosting provider for your website.]({% post_url 2020-01-31-how-to-find-the-best-hosting-provider-for-your-website-in-2020 %}).
+See: [find the best hosting provider for your website.]({% post_url 2020-01-31-how-to-find-the-best-hosting-provider-for-your-website-in-2020 %}).
 
 
 ## 5. Any Free and Secure Hosting Provider?
 
-Since you just started in web business, you don't want to pay much while you just learning this new world, right? Well guess what, you can launch a free and secure website for zero cost.. No advertisements, no garbage content from the hosting provider, just a free, clean, and secure website. It's called [GitHub Pages](https://pages.github.com/)
+Since you just started in web business, you're not planning to pay much money while you're just learning this new world, right? Well guess what, you can launch a free and secure website for zero cost.. No advertisements, no garbage content from the hosting provider, just a free, clean, and secure website, and it's called [GitHub Pages](https://pages.github.com/)
 
-If you're not a developer then you may not heard about [Github](https://www.github.com), it's software control system where developers can collaborate from anywhere on open source or private projects.
+If you're not a developer then you may not heard about [Github](https://www.github.com), it's a software control system where communities of developers around the world can share and collaborate on open source or private projects.
 
-Github pages is one of great Github projects to help any one have his own website to share his work or thoughts free.
+Github pages another great service from Github that aims to help any one have his own website to share his works or thoughts for free and without worrying about any of security or performance issues that we know with other paid providers.
 
-The only condition to be able to use Github Pages is that you need to build your site on static pages (HTML/CSS/Javascript). But I think you already decided to make your site a static one using jekyll. Then you are ready to be online!
+However, The only condition to be able to use Github Pages is that you need to build your site on static pages (HTML/CSS/Javascript). But I think you already decided to make your site a static one using jekyll. It that's so, what are you waiting for, go ahead and launch it on Github Pages!
 
 
 ## Be Aware of the Common Security Mistakes
