@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Me
+hero_title: About Me
 order: 5
 permalink: /about/
 description: "Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer and a part time author"

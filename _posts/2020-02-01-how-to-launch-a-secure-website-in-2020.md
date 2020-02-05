@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Launch a Secure Website in 2020!
+hero_title: How to Launch a Secure Website in 2020!
 description: How can you create a secure website without having security knowledge 
 date: 2020-02-01
 hero_image: /img/secure-website-hero2.jpg
