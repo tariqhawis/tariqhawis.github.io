@@ -5,8 +5,8 @@ hero_title: About Me
 order: 5
 permalink: /about/
 description: "Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer and a part time author"
-image: /img/hero4.jpg
-hero_image: /img/hero4.jpg
+image: /img/landing-hero1.jpg
+hero_image: /img/landing-hero1.jpg
 toc: true
 ---
 

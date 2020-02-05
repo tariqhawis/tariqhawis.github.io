@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to Find the Best Hosting Provider for your Website in 2020!
+hero_title: How to Find the Best Hosting Provider for your Website in 2020!
 description: Here I will show you my tips to find the best web hosting the you need for your website.  
 date: 2020-01-31
 hero_image: /img/select-hosting-hero.jpg
