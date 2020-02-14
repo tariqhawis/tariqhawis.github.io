@@ -3,11 +3,10 @@ layout: post
 hero_title: How to Find the Best Hosting Provider for your Website in 2020!
 description: Here I will show you my tips to find the best web hosting the you need for your website.  
 date: 2020-01-31
-hero_image: /img/select-hosting-hero.jpg
+hero_image: /img/select-hosting-hero1.jpg
 hero_height: is-large
-image: /img/select-hosting-thumb.jpg
+image: /img/select-hosting-hero1.jpg
 tags: web hosting virtual server VPS cloud dedicated 
-categories: Web Hosting
 ---
 
 Choosing the hosting company for running your website is not an easy task. In fact, there are many criteria that should be considered before you decide the best one for you.
@@ -68,7 +67,7 @@ The main advantage of this type is that you only pay for what you use of service
 Even cloud hosting does not immune from DDoS attack. However, the big giant companies like Microsoft and Amazon are providing very impressive security solutions, things like Anti-DDoS firewalls, monitoring and analysis SIEM systems to look for indicators of DDoS attacks, profiling systems that can learn your application's traffic over time to identify your legitimate traffic, and web firewall (WAF) to provide full stack DDoS protection, not to mention the sophisticated AI systems and Threat Intelligent they already have which improve and feed those solutions.
 
 
-Now after you choose the right hosting provider for you website, it's time to protect your own website. Check my other post to find out [How to create a secure website]({% post_url 2020-02-01-how-to-launch-a-secure-website-in-2020 %}).
+Now after you choose the right hosting provider for you website, it's time to protect your own website. Check my other post to find out [How to Launch your Secure Blog for FREE in 2020!]({% post_url 2020-02-01-how-to-launch-a-secure-website-in-2020 %}).
 
 
 If you have any question or you think there are other criteria of best hosting, please leave me a comment below , or send me a message over [twitter](https://www.twitter.com/tariqhawis) or [facebook](https://www.facebook.com/Tariq-Hawis-102907161281331/)

@@ -1,111 +1,208 @@
 ---
 layout: post
-hero_title: How to Launch a Secure Website in 2020!
-description: How can you create a secure website without having security knowledge 
+hero_title: How to Launch a Secure Website in 2020
+description: A complete guide to have your website as secure and fast as you dreamed of!
 date: 2020-02-01
-hero_image: /img/secure-website-hero2.jpg
+hero_image: /img/secure-website-hero.jpg
 hero_height: is-large
-image: /img/secure-website-hero2.jpg
-tags: web security hacking cybersecurity wordpress jekyll 
-categories: Web Security
+image: /img/secure-website-hero1.jpg
+tags: web security data breaches cyber attacks wordpress jekyll static dynamic website SSGs CDN
 ---
 
-If you have searched in the Internet how to secure a website before you end-up here, then you might overwhelmed with the complicated security guidelines which are meant to be for the web developers and cyber security experts, but who said that you have to be like one of those nerds to have a protected website!
+Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. Today, almost every website owner is aware about web attacks and the existence of hackers as threat of their websites.
 
-Let me reveal to you some secretes that no technical guy will tell you about, because these secretes will let you build your own website even if have zero knowledge with websites.
+![Biggest data breaches in 21st century](/img/cso_17-account-breaches.jpg)
 
-So let's get started.
+#### So what caused all this chaos?
 
+If you dig down to the details of these enormous breaches, you will find that it started with an injection vulnerability, one of the most common web vulnerabilities that used is SQL Injection which allow the intruder to reach website's database to extract the stored data, like users' accounts.
 
-## 1. Avoid Popular CMS Platforms!
-
-In the world of Cyber security, the more popular a piece of software it becomes, the more it becomes a target for the unfriendly sort of hacker, so live with this fact!
-
-That said, platforms like Wordpress, Drupal, and Joomla are by far the top 3 platforms on the Internet, which make them as well the the top 3 hackers' targets. If you don't want your site to be under the radar of hundreds of hackers around the world then you might need to consider staying away from these platforms. 
-
-I'm seeing that all the time while watching everyday security events, random sources sending HTTP requests with arbitrary crafted exploits that meant to target one of those popular platforms, even though I don't have any of them in my environment. 
-
-This popularity is what attracting both security analysis experts and hackers to dedicate their time and efforts finding out weakness spots on these platforms. 
-
-For instance, Wordpress is one of the most attractive target for these folks, considering that it powers 35% of all the websites on the Internet, which equal one-third of the web! According to W3Techs. It's no wonder that it has a huge number of vulnerabilities listed in [CVE website](https://cve.mitre.org/cgi-bin/cvekey.cgi?keyword=wordpress)
-
-And yes, it's too easy for anyone to find out the exploit that need to execute on your Wordpress site to take it down! And it's available on Internet and for free of charge! included with demo of how to do it! Free websites that offer that database of exploits is like [exploit-db](https://www.exploit-db.com/), just search for any name of software and choose any exploit you like to execute! it's that simple.
+This repeated web incidents have made a bad reputation to the dynamic websites, but then it raised the need to alternative techniques, **and here when Static Sites Generators come from.**
 
 
-## 2. Make it Simple!
+### What is Static Sites Generators
 
-Simple website means fast, and secure..
+>SSGs are a new, hybrid approach to web development that allow you to build a powerful, server-based website locally on your computer but pre-builds the site into static files for deployment.
 
-The way to do that is to build a site that focus only on your content, and the better choice for this goal is to build a static site.
+This modern approach has become the best alternative to dynamic website that has all sorts of programming variables, functions, classes, database calls that increase the potential vulnerabilities in your website.
 
-### What is a Static Site?
+![Dynamic Vs Static Websites](/img/dynamic-x-static.png)
+<small>>*(source: gitlab)*</small>
 
-In the world of web there are two kind of websites, static and dynamic. The first one means your site is build on HTML pages - with other objects like Javascript, CSS, image files - in other words, it has nothing to process from the server-end, an ready bread for your browser to eat.. I mean to present.
+This difference is giving the static websites many advantages over the dynamic ones, in terms of security, speed, cost, and scalability.
 
-While on the other hand, dynamic site has all sorts of programming variables, functions, classes, database calls...etc that needs from the server to compile and process all these files to bake at the end the HTML files that your browser can only understand.
+**1. Security**
 
-Just by realize this comparison you can conclude that the fastest and secure way is the static sites. Fast because no dynamic pages or database calls need to process. Secure because user input that will be inserted to the application and its database which leads to injection or file traversal attacks...etc
+Unlike dynamic websites, there is no data inputs need to be validated, or database calls, so no way for command injections.
 
-Static sites are becoming more and more common thing now a days, there are even some bloggers presume that static sites is the future of the web, personally I couldn't agree more. Why? because what is the real matters to any website owner is his content only, everything else comes next. So why bother make OS-size website with plugins, database, and programming framework (like java, .NET...) only to serve few pages of yours and end up with vulnerable site to the cyber attacks and malware infections.
+**2. Speed**
+
+Static site is fast, the website is already made of HTML, no php file to compile or database queries, so there is nothing to process from the server-side. 
+
+**3. Cost**
+
+It is also very cheap, you will only pay few bucks in a year if you run it on a service like [Amazon S3](https://aws.amazon.com/s3/)
+
+**4. Scalability**
+
+While with dynamic sites it's common to have unexpected traffic peaks that crashes your site. This is unlikely the case with static sites that has very low load on the server.
 
 
 ### How to Build a Static Site?
 
-OK then, how are you going to build a static site? Well, first of all you need to lean how to code with HTML and Javascript... wait WHAT?! 
-... just kidding! :)
+There are many modern Generators become available, the most commons are Jekyll, Next, Hugo, Gatsby, Hexo, and Nuxt. So you pick one of those generators which will take care of the coding stuff and let you focus on your content only.
 
-What you actually need to do is to pick one of static site generators which will take care of the coding stuff and let you focus on your content only. The most popular SSGs these days are Jekyll, Middleman, Roots, and Hugo. To me Jekyll is my favorite, like this site is build on it!
+![source: jekyllrb.com](/img/jekyll.png)
 
-So now how it works? First you need to follow the SSGs instructions, as for [jekyll](https://jekyllrb.com/docs/installation), you need to have ruby on your machine as described in above line, then you install bundler/jekyll gems. Next everything becomes very easy, with three magic words on your terminal you can build your entire site project:
+I prefer *Jekyll* for many reasons, it has active community, it's the one that established many of the patterns that other SSGs are now using, from metadata in front matter and structured data folders, to support for Markdown, expressive Liquid templating, and support for categories and tags.
+
+
+**So let's build our first Jekyll blog.**
+
+The steps will be first building your blog on your own machine, and once you customized it as you want it to be, you can deploy one folder only labeled `_site`.
+
+To setup your Jekyll environment, you'll need to install Ruby -the language that Jekyll is build by-, then bundler -the thing that will manage your projects decadencies-, and finally Jekyll itself. The instructions are varies according to type of your operating system. If you are using Linux -which I love and recommend-, then it's the same ever-boring "open terminal, then run this apt/yum command" thing.
+
+If by any chance your linux distro is Ubuntu, Follow these steps:
+
+**1- Open your terminal, Dah, and run this command:**
+
+```shell
+sudo apt install ruby-full build-essential zlib1g-dev
+```
+
+Wait for few seconds for apt to install Ruby with all its essential libraries.
+
+**2- After you get the prompt again, edit bashrc with `nano ~/.bashrc`, then move the courser to the bottom of the file, then add the following lines:**
+
+```shell
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
+```
+
+Save the file by pressing the combination keys "CTRL+O" then "CTRL+x"
+
+**3- Back to terminal now, you need to apply the changes on bashrc by running this command**
+
+```shell
+source ~/.bashrc
+```
+
+**4-Finally, install Jekyll. You still have terminal open, run this command:**
+
+```shell
+gem install jekyll bundler
+```
+
+That's it.
+
+For other operating systems "Windows or MacOS" , please refer to the [jekyll installation guide](https://jekyllrb.com/docs/installation) and click on the link of your operating system name.
+
+Now that you have Jekyll environment settled, it's time to build your first lovely jekyll blog. First pick a location where your blog files will be placed on your system, I prefer to be as close to the root as possible, such as "/home/$USER/myblog", or for MacOS: "/Users/$USER/myblog", now whatever the location you choose, make your current location at that place, like running `cd /home/$USER`, then create your blog directory with the following command: 
 
 ```shell
 jekyll new myblog
 ```
-Wait for few seconds... Et Voila! you just built a complete project. No code or database needed. 
+Wait for few seconds... Et Voila! you've just created a complete jekyll blog.
 
-Now you may thing that I'm going to tell you how to setup your apache, but no! Here the things is much easier, what you only need to run your site locally by running another tiny command so jekyll will build and compile all pages:
+Your jekyll blog has a structure that looks like this:
+
+```bash
+├── _config.yml # Stores configuration data
+├── _data   # Well-formatted site data should be placed here, such as the navigation items
+|   └── navigation.yml 
+├── _drafts # here placed the unpublished posts.
+|   ├── draft-post1.md
+|   └── draft-post2.md
+├── _includes  # These are the partials that can be mixed and matched by your layouts and posts to facilitate reuse
+|   ├── footer.html
+|   └── header.html
+├── _layouts    #These are the HTML templates that wrap posts
+|   ├── default.html
+|   └── post.html
+├── _posts  # Your own posts saved here.
+|   ├── yyyy-mm-dd-post-title1.md
+|   └── yyyy-mm-dd-post-title2.md
+├── _sass   # These are sass partials which will then be processed into a single stylesheet main.css
+|   ├── _base.scss
+|   └── _layout.scss
+├── _site   # This is where your generated site will be placed
+└── index.html # You main page, can also be an 'index.md' with valid front matter
+```
+
+Now to see how your website looks like for your visitors, run the following command to build your site and start a local server as well:
 
 ```shell
 bundle exec jekyll serve
 ```
 
-after few seconds you will see on terminal the last two lines:
+After few seconds, you will see on terminal the last two lines:
+
 ```shell
 Server address: http://127.0.0.1:4000/
 Server running... press ctrl-c to stop.
 ```
-It means your site is ready. Now open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/) you will see a default page from jekyll welcoming you to jekyll like this one: 
+
+Now open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/), you will see a default page from jekyll Saying welcome to you:
 
 ![New Jekyll Site](/assets/images/new-jekyll-site.png) 
 
-Afterward to learn more on how to create a wonderful website, go ahead and visit jekyll's [Step by Step Tutorial](https://jekyllrb.com/docs/step-by-step/01-setup/), you will learn it in no time.
+Yes I know, it looks creepy. This's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll -this's one of the active community's advantages- here are some of links:
 
 
-## 3. Pick the Right Hosting Provider
+- [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
+- [jekyllthemes.org](https://jekyllthemes.org)
+- [jekyllthemes.io](https://jekyllthemes.io)
+- [jekyll-themes.com](https://jekyll-themes.com)
 
-After you built your website, you need two things, a hosting space where you can upload your site's files - using FTP service or so - and a domain name points to it -something like yourname.com- so anyone can reach your website by typing this name in their Internet browser.
-
-Finding the best hosting provider and the plan that suites your needs is not easy, but it's a very important step. Believe me, it's worth your time to find the best place for your site. You need the right hosting provider and the plan that gives your site the proper security with a decent overall performance so you will have the peace of mind at the end.
-
-See: [find the best hosting provider for your website.]({% post_url 2020-01-31-how-to-find-the-best-hosting-provider-for-your-website-in-2020 %}).
-
-
-## 5. Any Free and Secure Hosting Provider?
-
-Since you just started in web business, you're not planning to pay much money while you're just learning this new world, right? Well guess what, you can launch a free and secure website for zero cost.. No advertisements, no garbage content from the hosting provider, just a free, clean, and secure website, and it's called [GitHub Pages](https://pages.github.com/)
-
-If you're not a developer then you may not heard about [Github](https://www.github.com), it's a software control system where communities of developers around the world can share and collaborate on open source or private projects.
-
-Github pages another great service from Github that aims to help any one have his own website to share his works or thoughts for free and without worrying about any of security or performance issues that we know with other paid providers.
-
-However, The only condition to be able to use Github Pages is that you need to build your site on static pages (HTML/CSS/Javascript). But I think you already decided to make your site a static one using jekyll. It that's so, what are you waiting for, go ahead and launch it on Github Pages!
+Installing any theme you liked is very easy. In fact, most of the theme creators are providing the instructions for the installation which are pretty same like the following:
 
 
-## Be Aware of the Common Security Mistakes
+1. Edit Gemfile "inside your blog directory", and add `gem "THEMENAME-jekyll-theme"`, replace THEMENAME with the name of the theme
 
-So you stayed away from Dynamic/database site. What now, does my website become a hack-proof? No, but you almost there! 
+2. With the terminal opened on the root of your blog directory, run the command `bundle install`, that will install the theme and its dependancies.
 
-Even with a static pages, you will not get a 100 percent of protection. In fact, there are still ever-present security threats that can always be there like someone getting your credentials for your server. So you need to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
+3. Next, edit _config.yml and add `theme: THEMENAME-jekyll-theme`, replacing THEMENAME with your theme name, that will setup the theme to your site.
+    
+4. Finally, run `bundle exec jekyll serve` to build and serve your site *in case it is already running, close it with `CTRL+C` and re-run the command to rebuild the site*
+
+Now re-check again with [http://127.0.0.1:4000](http://127.0.0.1:4000/) and see your new website's look.
+
+For further changes to the site, I recommend to refer to follow the documentation at theme's website to set things like the navigation, contact form and social sharing buttons...etc
+
+
+### Deploy your site
+
+Now that you built your website and added your own touch, it's time to make the website available online. 
+
+At the time when you executed `bundle exec jekyll serve`, Jekyll generated your static site to the _site directory inside your blog. You can transfer the contents of this directory to almost any hosting provider to get your site live.
+
+*See: [How to Find the Best Hosting Provider for your Website.]({% post_url 2020-01-31-how-to-find-the-best-hosting-provider-for-your-website-in-2020 %})*
+
+Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload _site to any hosting provider using any file transfer ie. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
+
+
+### Any Free Options?
+
+If you are looking for a free hosting service especially when your website or business service is in its early stages, but you need a clean website without ads garbage by the provider, and have the freedom to point your own domain, then the best option for you is the Github's awesome service called [Github Pages](https://pages.github.com/). 
+
+There are some steps to be followed before you can host your website on Github Pages, which involves creating a repository on your Github account, and initiate git inside your blog so you can push your changes from local site to the the online repository where your blog resides.
+
+Here is a complete guide from Github to setup your [Jekyll blog on Github Pages](https://help.github.com/en/github/working-with-github-pages/creating-a-github-pages-site-with-jekyll) -I followed it myself-
+
+
+### Be Aware of the Common Security Mistakes
+
+So you made up your mind, and chose to build a static site, now **Does your website become a hack-proof?**
+
+*I would say no, but you almost there!*
+
+Even with a static website, you won't get a 100 percent of protection. In fact, there are still ever-present security threats that can always be there like using a dictionary password or having outdated or missconfigured service on the server. 
+
+![percentage of attack vectors](/img/attack-vectors.jpg)
+
+Paying attention security principles here, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
+
 
 
 That's it. I hope you enjoyed reading. If you have any opinion or you think there are other thoughts I need to add, please leave me a comment down below, or send me a message over [twitter](https://www.twitter.com/tariqhawis) or [facebook](https://www.facebook.com/Tariq-Hawis-102907161281331/)

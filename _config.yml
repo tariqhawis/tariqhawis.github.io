@@ -73,7 +73,8 @@ defaults:
       author: "Tariq Hawis"
       layout: post
       hero_image: /img/blog-hero.jpg
-      show_sidebar: true
+      show_sidebar: false
+      middle_text: true
 
 # SEO
 author:
