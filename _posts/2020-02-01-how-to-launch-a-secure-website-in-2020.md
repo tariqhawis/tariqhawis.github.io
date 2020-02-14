@@ -9,7 +9,9 @@ image: /img/secure-website-hero1.jpg
 tags: web security data breaches cyber attacks wordpress jekyll static dynamic website SSGs CDN
 ---
 
-Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. Today, almost every website owner is aware about web attacks and the existence of hackers as threat of their websites.
+Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 
+
+Today, almost every website owner is aware about web attacks and the existence of hackers as threat of their websites.
 
 ![Biggest data breaches in 21st century](/img/cso_17-account-breaches.jpg)
 
@@ -176,8 +178,6 @@ For further changes to the site, I recommend to refer to follow the documentatio
 Now that you built your website and added your own touch, it's time to make the website available online. 
 
 At the time when you executed `bundle exec jekyll serve`, Jekyll generated your static site to the _site directory inside your blog. You can transfer the contents of this directory to almost any hosting provider to get your site live.
-
-*See: [How to Find the Best Hosting Provider for your Website.]({% post_url 2020-01-31-how-to-find-the-best-hosting-provider-for-your-website-in-2020 %})*
 
 Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload _site to any hosting provider using any file transfer ie. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
 
