@@ -149,7 +149,7 @@ Server running... press ctrl-c to stop.
 
 Now open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/), you will see a default page from jekyll Saying welcome to you:
 
-![New Jekyll Site](/assets/images/new-jekyll-site.png) 
+![New Jekyll Site](/img/new-jekyll-site.png) 
 
 Yes I know, it looks creepy. This's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll here are some of links:
 
