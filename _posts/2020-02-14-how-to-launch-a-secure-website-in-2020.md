@@ -151,7 +151,7 @@ Now open your favorite browser and put this link: [http://127.0.0.1:4000](http:/
 
 ![New Jekyll Site](/img/new-jekyll-site.png) 
 
-Yes I know, it looks creepy. This's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll here are some of links:
+Yes I know, it looks awful. That's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll here are some of links:
 
 
 - [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
