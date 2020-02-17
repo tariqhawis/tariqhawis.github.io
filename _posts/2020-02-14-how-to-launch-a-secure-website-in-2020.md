@@ -54,7 +54,7 @@ While with dynamic sites it's common to have unexpected traffic peaks that crash
 
 There are many modern Generators become available, the most commons are Jekyll, Next, Hugo, Gatsby, Hexo, and Nuxt. So you pick one of those generators which will take care of the coding stuff and let you focus on your content only.
 
-![source: jekyllrb.com](/img/jekyll.png)
+![source: jekyllrb.com](/img/ssgs.png)
 
 I prefer *Jekyll* for many reasons, it has active community, it's the one that established many of the patterns that other SSGs are now using, from metadata in front matter and structured data folders, to support for Markdown, expressive Liquid templating, and support for categories and tags.
 
