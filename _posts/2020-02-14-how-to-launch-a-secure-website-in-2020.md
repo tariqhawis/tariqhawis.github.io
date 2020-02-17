@@ -11,7 +11,7 @@ tags: web security data breaches cyber attacks wordpress jekyll static dynamic w
 
 Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 
 
-Today, almost every website owner is aware about web attacks and the existence of hackers as threat of their websites.
+Today, almost every website owner is aware of web attacks and the existence of hackers as threat of their websites.
 
 ![Biggest data breaches in 21st century](/img/cso_17-account-breaches.jpg)
 
@@ -29,7 +29,7 @@ This repeated web incidents have made a bad reputation to the dynamic websites, 
 This modern approach has become the best alternative to dynamic website that has all sorts of programming variables, functions, classes, database calls that increase the potential vulnerabilities in your website.
 
 ![Dynamic Vs Static Websites](/img/dynamic-x-static.png)
-<small>>*(source: gitlab)*</small>
+<small>*(source: gitlab)*</small>
 
 This difference is giving the static websites many advantages over the dynamic ones, in terms of security, speed, cost, and scalability.
 
@@ -61,9 +61,11 @@ I prefer *Jekyll* for many reasons, it has active community, it's the one that e
 
 **So let's build our first Jekyll blog.**
 
-The steps will be first building your blog on your own machine, and once you customized it as you want it to be, you can deploy one folder only labeled `_site`.
+The steps will be first building your blog on your own machine, and once you customized it as you want it to be, you can deploy the `_site` folder to the hosting space.
 
-To setup your Jekyll environment, you'll need to install Ruby -the language that Jekyll is build by-, then bundler -the thing that will manage your projects decadencies-, and finally Jekyll itself. The instructions are varies according to type of your operating system. If you are using Linux -which I love and recommend-, then it's the same ever-boring "open terminal, then run this apt/yum command" thing.
+To setup your Jekyll environment, you'll need to install Ruby -the language that Jekyll is build by-, then bundler -the thing that will manage your projects decadencies-, and finally Jekyll itself. 
+
+The instructions are varies according to type of your operating system. If you are using Linux -which I love and recommend-, then it's the same ever-boring "open terminal, then run this apt/yum command" thing.
 
 If by any chance your linux distro is Ubuntu, Follow these steps:
 
@@ -73,9 +75,9 @@ If by any chance your linux distro is Ubuntu, Follow these steps:
 sudo apt install ruby-full build-essential zlib1g-dev
 ```
 
-Wait for few seconds for apt to install Ruby with all its essential libraries.
+Wait a few seconds for apt to install Ruby with all its essential libraries.
 
-**2- After you get the prompt again, edit bashrc with `nano ~/.bashrc`, then move the courser to the bottom of the file, then add the following lines:**
+**2- After you get the prompt again, edit bashrc with `nano ~/.bashrc`, then add the following couple lines at the bottom of the file:**
 
 ```shell
 export GEM_HOME="$HOME/gems"
@@ -90,7 +92,7 @@ Save the file by pressing the combination keys "CTRL+O" then "CTRL+x"
 source ~/.bashrc
 ```
 
-**4-Finally, install Jekyll. You still have terminal open, run this command:**
+**4-Finally, install Jekyll; You still have terminal open, run this command:**
 
 ```shell
 gem install jekyll bundler
@@ -98,14 +100,14 @@ gem install jekyll bundler
 
 That's it.
 
-For other operating systems "Windows or MacOS" , please refer to the [jekyll installation guide](https://jekyllrb.com/docs/installation) and click on the link of your operating system name.
+For other operating systems "Windows or MacOS", refer to the [jekyll installation guide](https://jekyllrb.com/docs/installation) and click on the operating system of your type.
 
-Now that you have Jekyll environment settled, it's time to build your first lovely jekyll blog. First pick a location where your blog files will be placed on your system, I prefer to be as close to the root as possible, such as "/home/$USER/myblog", or for MacOS: "/Users/$USER/myblog", now whatever the location you choose, make your current location at that place, like running `cd /home/$USER`, then create your blog directory with the following command: 
+Now that you have Jekyll environment settled, it's time to build your first lovely jekyll blog. First pick a location where your blog files will be placed on your system, I prefer to be as close to the root as possible, such as `/home/$USER/myblog`, or for MacOS: `/Users/$USER/myblog`, now whatever the location you choose, go to that location with `cd /home/$USER`, and run this command:
 
 ```shell
 jekyll new myblog
 ```
-Wait for few seconds... Et Voila! you've just created a complete jekyll blog.
+Wait for few seconds... Et Voila! You've just created a complete jekyll blog.
 
 Your jekyll blog has a structure that looks like this:
 
@@ -149,7 +151,7 @@ Now open your favorite browser and put this link: [http://127.0.0.1:4000](http:/
 
 ![New Jekyll Site](/assets/images/new-jekyll-site.png) 
 
-Yes I know, it looks creepy. This's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll -this's one of the active community's advantages- here are some of links:
+Yes I know, it looks creepy. This's the look of the default gem-based theme called Minima, there are many themes available on the internet for jekyll here are some of links:
 
 
 - [jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
@@ -157,29 +159,29 @@ Yes I know, it looks creepy. This's the look of the default gem-based theme call
 - [jekyllthemes.io](https://jekyllthemes.io)
 - [jekyll-themes.com](https://jekyll-themes.com)
 
-Installing any theme you liked is very easy. In fact, most of the theme creators are providing the instructions for the installation which are pretty same like the following:
+Installing any theme you like is very easy. In fact, most of the theme creators are providing the instructions for the installation which are pretty same like the following:
 
 
-1. Edit Gemfile "inside your blog directory", and add `gem "THEMENAME-jekyll-theme"`, replace THEMENAME with the name of the theme
+1. Edit Gemfile "inside your blog directory", and add `gem "THEMENAME-jekyll-theme"`, replace *THEMENAME* with the name of the theme
 
 2. With the terminal opened on the root of your blog directory, run the command `bundle install`, that will install the theme and its dependancies.
 
-3. Next, edit _config.yml and add `theme: THEMENAME-jekyll-theme`, replacing THEMENAME with your theme name, that will setup the theme to your site.
+3. Next, edit `_config.yml` and add `theme: THEMENAME-jekyll-theme`, replacing *THEMENAME* with your theme name, that will setup the theme to your site.
     
 4. Finally, run `bundle exec jekyll serve` to build and serve your site *in case it is already running, close it with `CTRL+C` and re-run the command to rebuild the site*
 
 Now re-check again with [http://127.0.0.1:4000](http://127.0.0.1:4000/) and see your new website's look.
 
-For further changes to the site, I recommend to refer to follow the documentation at theme's website to set things like the navigation, contact form and social sharing buttons...etc
+For further changes to the site, you need to read the documentation at theme's website to set things like the navigation, contact form and social sharing buttons...etc
 
 
 ### Deploy your site
 
 Now that you built your website and added your own touch, it's time to make the website available online. 
 
-At the time when you executed `bundle exec jekyll serve`, Jekyll generated your static site to the _site directory inside your blog. You can transfer the contents of this directory to almost any hosting provider to get your site live.
+At the time when you executed `bundle exec jekyll serve`, Jekyll generated your static site to the `_site` directory inside your blog. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload _site to any hosting provider using any file transfer ie. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
+Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload `_site` to any hosting provider using any file transfer ie. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
 
 
 ### Any Free Options?
@@ -193,7 +195,7 @@ Here is a complete guide from Github to setup your [Jekyll blog on Github Pages]
 
 ### Be Aware of the Common Security Mistakes
 
-So you made up your mind, and chose to build a static site, now **Does your website become a hack-proof?**
+So you made up your mind, and chose to build a static site, **does that makes your website a hack-proof?**
 
 *I would say no, but you almost there!*
 
@@ -201,8 +203,9 @@ Even with a static website, you won't get a 100 percent of protection. In fact, 
 
 ![percentage of attack vectors](/img/attack-vectors.jpg)
 
-Paying attention security principles here, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
+So what you need here is to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
 
 
+That's it. You are now safe from the most common attack vectors that caused many many sites to be breached while paying few bucks for hosting and domain name.
 
-That's it. I hope you enjoyed reading. If you have any opinion or you think there are other thoughts I need to add, please leave me a comment down below, or send me a message over [twitter](https://www.twitter.com/tariqhawis) or [facebook](https://www.facebook.com/Tariq-Hawis-102907161281331/)
+If you have any question or any suggestion to point out, why not leave me a comment down below, or send me a message over [twitter](https://www.twitter.com/tariqhawis)
