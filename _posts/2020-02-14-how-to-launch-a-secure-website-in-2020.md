@@ -181,7 +181,7 @@ Now that you built your website and added your own touch, it's time to make the 
 
 At the time when you executed `bundle exec jekyll serve`, Jekyll generated your static site to the `_site` directory inside your blog. You can transfer the contents of this directory to almost any hosting provider to get your site live.
 
-Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload `_site` to any hosting provider using any file transfer ie. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
+Having a generated static site gives you more hosting options than with the traditional LAMP site. As you can either upload `_site` to any hosting provider using any file transfer i.e. FTP, or you choose one of the modern web hosting that provides automatic deployment, global CDN, one click HTTPS in addition to other awesome features for SSGs-based sites. Some of those providers are Aerobatic, Netlify, and AWS Amplify, Find the full list with the features for each one at [jekyll Docs](https://jekyllrb.com/docs/deployment/third-party/)
 
 
 ### Any Free Options?
@@ -203,9 +203,9 @@ Even with a static website, you won't get a 100 percent of protection. In fact, 
 
 ![percentage of attack vectors](/img/attack-vectors.jpg)
 
-So what you need here is to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep you recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
+So what you need here is to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep your recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
 
 
-That's it. You are now safe from the most common attack vectors that caused many many sites to be breached while paying few bucks for hosting and domain name.
+That's it. You are now safe from the most common attack vectors that caused so many sites to be breached while paying few bucks for hosting and domain name.
 
 If you have any question or any suggestion to point out, why not leave me a comment down below, or send me a message over [twitter](https://www.twitter.com/tariqhawis)

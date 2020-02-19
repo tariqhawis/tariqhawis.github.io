@@ -37,6 +37,7 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
   - github-pages
+  - jekyll-feed
 exclude:
    - .sass-cache/
    - .jekyll-cache/
