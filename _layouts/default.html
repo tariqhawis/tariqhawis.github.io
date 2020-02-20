@@ -39,6 +39,22 @@
             </div>
         </div>
     </section>
+      {% if page.isindex %}
+    <section class="bg-light">
+        <div class="container section">
+            <div class="columns is-centered">
+                <div class="column is-8-desktop is-8-tablet has-text-centered">
+                    {% include subscribe.html %}
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white">
+        <div class="container section">
+            {% include post-cards.html %}
+        </div>
+    </section>
+    {% endif %}
     {% unless page.hide_footer %}
         {% include footer.html %}
     {% endunless %}

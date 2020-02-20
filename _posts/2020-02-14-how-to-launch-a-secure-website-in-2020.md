@@ -4,9 +4,9 @@ hero_title: How to Launch a Secure Website in 2020
 description: A complete guide to have your website as secure and fast as you dreamed of!
 date: 2020-02-14
 hero_image: /img/secure-website-hero.jpg
-hero_height: is-large
+hero_height: is-medium
 image: /img/secure-website-hero1.jpg
-tags: web security data breaches cyber attacks wordpress jekyll static dynamic website SSGs CDN
+tags: web security data breaches cyber attacks jekyll static dynamic website SSGs
 ---
 
 Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 

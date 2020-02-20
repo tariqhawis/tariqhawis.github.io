@@ -12,6 +12,7 @@ description: |
 # image: /img/hero4.jpg
 hero_image: /img/landing-hero2.jpg
 hero_height: is-fullheight
+isindex: true
 ---
 
 <div class="columns is-multiline is-mobile is-centered">
@@ -23,43 +24,11 @@ hero_height: is-fullheight
     <div class="column is-6-desktop is-6-tablet is-12-mobile content">
         <h2 class="has-text-centered">Who am I?</h2>
 
-       <p>Hello and welcome! My name is Tariq Hawis and I'm a full-time Cybersecurity Engineer and an Information Security Consultant.</p>
+       <p>Hello and welcome! My name is Tariq Hawis and I'm a full-time Cyber Security Engineer and an Information Security Consultant.</p>
 
-       <p>During my last 13 years, I've confronted with so many attacks and infiltration attempts from hackers and bots that I can't count, although they consumed most of my time, they honestly have the most credit of what I become now after they pushed me so hard doing endless reads, researches and experiments</p>
+       <p>During my last 13 years, I've confronted with so many attacks and infiltration attempts from hackers and bots that I can't count. And thanks to them, I learned many techniques over the time against them </p>
 
-       <p>If you would like, call me "Hackers Fighter!", since that what I actually do all the time during all these years of my life.</p>
+       <p>So I decided to launch this blog to share with you my experience and story, hopefully I can contribute even a little to make Internet better to everyone.</p>
 
-       <p>And so I decided to launch this blog to share with you my experience and stories, hopefully it will increase the security awarnesses through out the web developers and Sys Admins communities. </p>
-
-    </div>
+ </div>
 </div>
-<hr class="navbar-divider">
-    <section class="section">
-        <div class="columns is-multiline is-centered">
-            <div class="column is-12">
-                <div class="content">
-                    <h2 class="has-text-centered">Here's where you can find my last posts</h2>
-                </div>
-            </div>
-            {% for item in site.posts %}
-            <div class="column is-4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="{{ item.hero_image }}" alt="{{ item.hero_title }}" />
-                    </div>
-                    <div class="card-content">
-                            <p class="title is-5">{{ item.hero_title }}</p>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                        <span>
-                            <a href="{{ item.url }}" class="button is-info">Read more..</a>
-                        </span>
-                        </p>
-                    </footer>
-                </div>
-
-            </div>
-            {% endfor %}
-        </div>
-    </section>

@@ -114,3 +114,17 @@ div.highlight {
       font-size: 14px;
     }
   }
+
+.bg-white {
+    background-color: #ffffff;
+}
+.bg-light {
+    background-color: #fafafa;
+}
+
+.footer {
+  background-color: #333;
+  padding: 3rem 1.5rem 6rem;
+}
+a.foot-link { color: white; }
+a.foot-link:hover { color: $grey-light; }

@@ -1,14 +1,13 @@
 ---
 layout: post
-hero_title: Why you Should Stay Away from WordPress
+hero_title: Why you Should Avoid WordPress
 description: There are many reasons that convince you to go for Wordpress, yet, I will tell you the better reasons that you should not!
 published: false
-date: 2020-02-01
+date: 2020-02-19
 hero_image: /img/avoid-wordpress-hero.jpg
 hero_height: is-large
 image: /img/avoid-wordpress-hero.jpg
 tags: web security wordpress dynamic site
-categories: Web Security
 ---
 
 In the cyber world, the more popular a piece of software it becomes, the more it becomes a target for the unfriendly sort of hacker, so live with this fact!

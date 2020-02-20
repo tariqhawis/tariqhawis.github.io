@@ -1,13 +1,14 @@
 
 <footer class="footer">
-    <div class="container">
+
+ <div class="container">
 
         {% if site.footer_menu %}
         <div class="columns is-multiline">
             {% for item in site.data[site.footer_menu] %}
             <div class="column has-text-centered">
                 <div>
-                    <a href="{{ item.link | prepend: site.baseurl }}" class="link">{{ item.name }}</a>
+                    <a href="{{ item.link | prepend: site.baseurl }}" class="foot-link">{{ item.name }}</a>
                 </div>
             </div>
             {% endfor %}
@@ -39,5 +40,4 @@
                 </div>
             </div>
         </div>
-    </div>
 </footer>
