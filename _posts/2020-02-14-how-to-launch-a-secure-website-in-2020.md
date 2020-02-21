@@ -1,7 +1,7 @@
 ---
 layout: post
 hero_title: How to Launch a Secure Website in 2020
-description: A complete guide to have your website as secure and fast as you dreamed of!
+description: You will learn about Static Site Generator and how to use it to build a secure and fast website 
 date: 2020-02-14
 hero_image: /img/secure-website-hero.jpg
 hero_height: is-medium

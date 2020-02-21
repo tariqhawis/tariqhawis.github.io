@@ -1,1 +1,1 @@
-# Cybersecurity Researcher, Pentester, and Trainer
+# The Blog of Tariq Hawis: Cyber Security Blogging and Tutorials | Learn How to Stay Away from Hackers
