@@ -1,7 +1,7 @@
 ---
 layout: post
 hero_title: Why you Should Avoid Using WordPress
-description: While it considered the number one choice for anyone wants to start an online business or a personal blog, WordPress has become the number one target for hackers and bug hunters.
+description: WordPress is the most common CMS used worldwide, and also the most targeted CMS by hackers
 date: 2020-02-29
 hero_image: /img/avoid-wordpress-hero.jpg
 hero_height: is-medium
