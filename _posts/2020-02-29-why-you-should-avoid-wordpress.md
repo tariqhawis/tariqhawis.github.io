@@ -71,6 +71,6 @@ While in dynamic-sites fashion, website's pages are delivered on-demand to the v
 ![Static Sites vs Dynamic Sites](/img/dynamic-x-static.png)
 
 
-If you want to know more about SSGs and how to build one, check out my other post [How to Launch a Secure Website in 2020]({% post_url 2020-02-14-how-to-launch-a-secure-website-in-2020.md %})
+If you want to know more about SSGs and how to build one, check out my other post [How to Launch a Secure Website in 2020]({% post_url 2020-02-14-how-to-launch-a-secure-website-in-2020 %})
 
 Should you have questions or suggestions about this topic, please reach me out on [twitter](https://www.twitter.com/tariqhawis), or leave me a comment below.
