@@ -16,7 +16,9 @@ layout: default
     <span class="tag is-primary">{{ tag }}</span>
     {% endfor %}
 </div>
-
+<div class="content has-text-centered section bg-light">
+    {% include subscribe.html %}
+</div>
     {% if site.disqus.shortname %}
       {% include disqus.html %}
     {% endif %}

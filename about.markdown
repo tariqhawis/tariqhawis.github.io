@@ -7,6 +7,7 @@ permalink: /about/
 description: "Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer and a part time author"
 image: /img/landing-hero1.jpg
 hero_image: /img/landing-hero1.jpg
+hero_height: is-large
 toc: true
 ---
 
