@@ -4,7 +4,7 @@ hero_title: Why you Should Avoid Using WordPress
 description: WordPress is the most common CMS used worldwide, and also the most targeted one by hackers, here's why you should avoid WordPress and what are the best alternatives
 date: 2020-02-29
 hero_image: /img/avoid-wordpress-hero.jpg
-hero_height: is-medium
+hero_height: is-large
 image: /img/avoid-wordpress-hero.jpg
 tags: web security wordpress CMS SSG
 ---

@@ -5,6 +5,7 @@ $info: #981430;
 $pagination-current-background-color: $info;
 $pagination-current-border-color: $info;
 $divider-color: #333;
+
 // Import Main CSS file from theme
 @import "main";
 
@@ -14,6 +15,20 @@ $divider-color: #333;
         text-shadow: 1px 1px rgba($primary, 0.5);
         animation: appear 1s;
     }
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 div.highlight {

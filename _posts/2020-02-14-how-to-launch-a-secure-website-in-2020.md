@@ -4,7 +4,7 @@ hero_title: How to Launch a Secure Website in 2020
 description: You will learn about Static Site Generator and how to use it to build a secure and fast website 
 date: 2020-02-14
 hero_image: /img/secure-website-hero.jpg
-hero_height: is-medium
+hero_height: is-large
 image: /img/secure-website-hero1.jpg
 tags: web security data breaches cyber attacks jekyll static dynamic website SSGs
 ---
