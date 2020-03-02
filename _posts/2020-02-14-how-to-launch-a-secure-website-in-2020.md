@@ -1,12 +1,12 @@
 ---
 layout: post
 hero_title: How to Launch a Secure Website in 2020
-description: You will learn about Static Site Generator and how to use it to build a secure and fast website 
+description: Learn about static site generators for a modern fast and secure website.
 date: 2020-02-14
 hero_image: /img/secure-website-hero.jpg
 hero_height: is-large
 image: /img/secure-website-hero1.jpg
-tags: web security data breaches cyber attacks jekyll static dynamic website SSGs
+tags: static site generators jekyll github pages secure website
 ---
 
 Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 
@@ -54,7 +54,8 @@ While with dynamic sites it's common to have unexpected traffic peaks that crash
 
 There are many modern Generators become available, the most commons are Jekyll, Next, Hugo, Gatsby, Hexo, and Nuxt. So you pick one of those generators which will take care of the coding stuff and let you focus on your content only.
 
-![source: jekyllrb.com](/img/ssgs.png)
+![How Static Site Generators Work](/img/ssgs.png)
+<small>*source: jekyllrb.com*</small>
 
 I prefer *Jekyll* for many reasons, it has active community, it's the one that established many of the patterns that other SSGs are now using, from metadata in front matter and structured data folders, to support for Markdown, expressive Liquid templating, and support for categories and tags.
 
@@ -63,7 +64,7 @@ I prefer *Jekyll* for many reasons, it has active community, it's the one that e
 
 The steps will be first building your blog on your own machine, and once you customized it as you want it to be, you can deploy the `_site` folder to the hosting space.
 
-To setup your Jekyll environment, you'll need to install Ruby -the language that Jekyll is build by-, then bundler -the thing that will manage your projects decadencies-, and finally Jekyll itself. 
+To setup your Jekyll environment, you'll need to install Ruby -the language that Jekyll is build by-, then bundler -the thing that will manage your projects depedencies-, and finally Jekyll itself. 
 
 The instructions are varies according to type of your operating system. If you are using Linux -which I love and recommend-, then it's the same ever-boring "open terminal, then run this apt/yum command" thing.
 
@@ -164,7 +165,7 @@ Installing any theme you like is very easy. In fact, most of the theme creators 
 
 1. Edit Gemfile "inside your blog directory", and add `gem "THEMENAME-jekyll-theme"`, replace *THEMENAME* with the name of the theme
 
-2. With the terminal opened on the root of your blog directory, run the command `bundle install`, that will install the theme and its dependancies.
+2. With the terminal opened on the root of your blog directory, run the command `bundle install`, that will install the theme and its dependencies.
 
 3. Next, edit `_config.yml` and add `theme: THEMENAME-jekyll-theme`, replacing *THEMENAME* with your theme name, that will setup the theme to your site.
     
@@ -201,7 +202,7 @@ So you made up your mind, and chose to build a static site, **does that makes yo
 
 Even with a static website, you won't get a 100 percent of protection. In fact, there are still ever-present security threats that can always be there like using a dictionary password or having outdated or missconfigured service on the server. 
 
-![percentage of attack vectors](/img/attack-vectors.jpg)
+![Percentage of Attack Vectors](/img/attack-vectors.jpg)
 
 So what you need here is to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep your recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
 

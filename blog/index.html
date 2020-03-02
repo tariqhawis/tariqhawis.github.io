@@ -1,23 +1,45 @@
 ---
 layout: page
-title: Blog
-hero_title: My Blog Posts
+hero_title: My Blog
+order: 2
+description: "Tips & tricks to make your website and online profiles secure | learn how to stay away from Hackers and cyber attacks"
+permalink: /blog/index.html
+image: /img/blog-hero1.jpg
 hero_image: /img/blog-hero1.jpg
 hero_height: is-large
-image: /img/blog-hero1.jpg
-show_sidebar: true
 ---
 
-<div class="columns is-multiline">
-    <div class="column is-12">
-        {% include pagination.html %}
-    </div>
-    {% for post in paginator.posts %}
-    <div class="column is-12">
-        {% include post-card.html %}
-    </div>
-    {% endfor %}
-    <div class="column is-12">
-            {% include pagination.html %}
-    </div>
+<div class="container">
+    <section class="section">
+        <div class="columns is-multiline">
+            <div class="column is-12">
+                <div class="content">
+                    <p>My tips and tricks to make your website and online profiles secure and far away from hackers.</p>
+                </div>
+            </div>
+            {% for item in site.posts %}
+            <div class="column is-4">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="{{ item.hero_image }}" alt="{{ item.title }}" />
+                    </div>
+                    <div class="card-content">
+                            <p class="title is-5">{{ item.title }}</p>
+                        <div class="content">
+                            <p>{{ item.description }}</p>
+                        </div>
+                    </div>
+                    <footer class="card-footer">
+                        <p class="card-footer-item">
+                        <span>
+                            <a href="{{ item.url }}" class="button is-info">Read more</a>
+                        </span>
+                        </p>
+                    </footer>
+                </div>
+
+            </div>
+            {% endfor %}
+        </div>
+    </section>
 </div>

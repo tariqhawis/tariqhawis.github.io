@@ -1,12 +1,12 @@
 ---
 layout: post
 hero_title: Why you Should Avoid Using WordPress
-description: WordPress is the most common CMS used worldwide, and also the most targeted one by hackers, here's why you should avoid WordPress and what are the best alternatives
+description: Find the reasons why WordPress is a security risk for your website.
 date: 2020-02-29
 hero_image: /img/avoid-wordpress-hero.jpg
 hero_height: is-large
 image: /img/avoid-wordpress-hero.jpg
-tags: web security wordpress CMS SSG
+tags: web security wordpress CMS SSG jekyll
 ---
 
 WordPress is a web-based Content Management System -aka CMS- that allow users to create, manage, and modify content on a website, without needing to know anything about code. 
