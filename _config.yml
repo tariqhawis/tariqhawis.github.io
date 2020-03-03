@@ -2,7 +2,7 @@
 title: Tariq Hawis
 email: prof.tariq@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My personal website where I share my research findings, developed tools, and tutorial videos
+  My personal website dedicated to teach you how to protect your email, social media & cloud storage accounts, and your website from hackers and cyber attacks
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis
@@ -53,13 +53,6 @@ exclude:
 sass:
   style: compressed
 
-collections:
-  stories:
-    output: true
-  products:
-    output: true
-    layout: product
-    show_sidebar: false
 
 #exclude: [node_modules, gulpfile.js, vendor]
 
