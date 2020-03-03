@@ -4,7 +4,7 @@ hero_title: How to Launch a Secure Website in 2020
 description: Learn about static site generators for a modern fast and secure website.
 date: 2020-02-14
 permalink: /:title/
-redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020
+redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020.html
 hero_image: /img/secure-website-hero.jpg
 hero_height: is-large
 image: /img/secure-website-hero1.jpg
