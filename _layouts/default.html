@@ -10,7 +10,8 @@
     {% assign content_width = 'is-12' %}
 {% endif %}
 <!DOCTYPE html>
-<html>
+<!--[if lte IE 9]> <html class="lte-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
   {% include head.html %}
   <body>
     {% include header.html %}
