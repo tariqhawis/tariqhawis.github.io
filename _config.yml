@@ -1,8 +1,7 @@
 # Site settings
 title: Tariq Hawis
-email: prof.tariq@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  My personal website dedicated to teach you how to protect your email, social media & cloud storage accounts, and your website from hackers and cyber attacks
+      Bugs hunter, analyst, author, and trainer. Dedicated to teach you how to protect your online business and your own data from hackers attacks.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis

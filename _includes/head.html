@@ -2,12 +2,12 @@
   <link rel="canonical" href="https://www.tariqhawis.com" />
   <link rel="alternate" hreflang="en" href="https://www.tariqhawis.com/" />
     <meta charset="utf-8">
-    <meta name="keywords" content="web security, social media protection, cyber security, penetration testing, anti-hacking, hackers, email phishing, web vulnerability, cyber attacks, application security, cybersecurity awareness, security best practice">    
+    <meta name="keywords" content="Cyber security, protection, ethical hacking, anti-hacking, anti-malware, rootkits, botnets, vulnerabilities, security bugs, exploits, phishing, OWASP, SIEM, WAF, IPS, Firewall">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ page.title }} - {{ site.title }}</title>
+    <title>{{ page.title }}{% if page.author %} - {{ site.title }} {% endif %}</title>
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/app.css">
     <link rel="shortcut icon" type="image/png"
-          {% if site.favicon %} href="{{ site.favicon | prepend: site.baseurl }}" {% else %} href="{{ site.baseurl }}/favicon.png" {% endif %}
+          {% if site.favicon %} href="{{ site.favicon | prepend: site.baseurl }}" {% else %} href="{{ site.baseurl }}/favicon.ico" {% endif %}
     />
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     {% seo %}
@@ -17,4 +17,8 @@
         {%- endif -%}
     {%- endif -%}
     {%- include head-scripts.html -%}
+
+    {% for local_variable in local_variables %}
+    <p> {{ local_variable }} </p><br>
+    {% endfor %}
 </head>
