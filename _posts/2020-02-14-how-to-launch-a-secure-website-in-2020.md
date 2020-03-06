@@ -7,7 +7,7 @@ permalink: /:title/
 redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020.html
 hero_image: /img/secure-website-hero.jpg
 hero_height: is-large
-image: /img/secure-website-hero1.jpg
+image: https://www.tariqhawis.com/img/secure-website-hero1.jpg
 tags: static site generators jekyll github pages secure website
 ---
 
