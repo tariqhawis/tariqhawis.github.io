@@ -14,7 +14,7 @@ remote_theme: chrisrhymes/bulma-clean-theme
 #theme: bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
-#favicon: /favicon.ico
+favicon: /favicon.ico
 
 # Pagination settings
 paginate: 5
