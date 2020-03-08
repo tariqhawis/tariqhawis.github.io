@@ -1,6 +1,6 @@
 ---
 layout: post
-hero_title: Why you Should Avoid Using WordPress
+hero_title: Why you Should Avoid WordPress
 description: Find the reasons why WordPress is a security risk for your website.
 date: 2020-02-29
 permalink: /:title/

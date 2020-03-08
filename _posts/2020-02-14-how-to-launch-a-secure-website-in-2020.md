@@ -52,6 +52,8 @@ It is also very cheap, you will only pay few bucks in a year if you run it on a 
 While with dynamic sites it's common to have unexpected traffic peaks that crashes your site. This is unlikely the case with static sites that has very low load on the server.
 
 
+>See: [Why you Should Avoid WordPress]({% post_url 2020-02-29-why-you-should-avoid-wordpress %})
+
 ### How to Build a Static Site?
 
 There are many modern Generators become available, the most commons are Jekyll, Next, Hugo, Gatsby, Hexo, and Nuxt. So you pick one of those generators which will take care of the coding stuff and let you focus on your content only.
