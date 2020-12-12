@@ -218,6 +218,8 @@ db.get(`SELECT * FROM users WHERE username = ?`, username)
 **2- Received JWT should be validated before used by the application. And follow the [current jwt best practices](https://tools.ietf.org/html/draft-ietf-oauth-jwt-bcp-07) from the JWT developers at Auth0**
 
 
+
+
 Thank for reading.
 
 
