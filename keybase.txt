@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/tariqhawis
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.tariqhawis.com
+  * I am tariqhawis (https://keybase.io/tariqhawis) on keybase.
+  * I have a public key with fingerprint CBF9 4F73 C829 2458 F071  704D 2781 6E61 A18F AF65
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101955f807484ff2ab4a9ba1ca36018e2e35e103a408ba30e53ee80d63ffca6ca460a",
+      "fingerprint": "cbf94f73c8292458f071704d27816e61a18faf65",
+      "host": "keybase.io",
+      "key_id": "27816e61a18faf65",
+      "kid": "0101955f807484ff2ab4a9ba1ca36018e2e35e103a408ba30e53ee80d63ffca6ca460a",
+      "uid": "4b91316dfe87b0b3f7f43fc964aa6619",
+      "username": "tariqhawis"
+    },
+    "service": {
+      "hostname": "www.tariqhawis.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1607956249,
+  "expire_in": 157680000,
+  "prev": "73415807c9ae85ba1462c63ec6f46fbf8b7508db7b9039e38259035cd4758122",
+  "seqno": 8,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIyAnicrVJbSFRBGF4vRRqWFXiDQE4Elcs2cy5z5iySldIFIgy6YEXbnHNmdk/q
+nnX3rLtiPgQF3XyoCNIo6WJYVnSDisxLJD2UIfWQGvgQJZGhgVSiBc2Ropcem5eZ
++ef7vvn+j/9pVponMyWyx/v4Uev4ZMrznpa4J/AmkV8v6LZZJ/jrhUo6s9Eqk8ac
+QKVlCn4BQAA1RWEYqDKWGROJLhNNJ9AgEgIQU5FKCoVAIjLAOpEAVSRKMTCRxJhB
+kEFkBIjgFZgVDtJoJGqFHS5r6EyTmSoZWNREWcEMqFAFsimqGCKKIIGYEYYUTgzZ
+MZfBzekkRn2WzWv8Epix9w/8f/Ydn5GTdQ1KEJmMYlUHusRUJkvM0JBMCEJQc4Ex
+Gg2TasrRDolaNSGSsGJCg1fg9VrLoG60bi+/MYlEwvcX5zPsaq4RidqObdhV/D3k
+OJGY3+U7dZEZAtUDv6UCuhU2eZ6cUUujMcsOC37IkYZjudoQAVVTkChrXoEmI1aU
+BiwXoagIA77cf2gtl1QlGSo8IUMjFCs8HBmJBpKogZiMmM6wrioAm7qqa0DSqIRF
+hR8Uw5RVBUNRFNzmasK24MfcJglyyZgVDBMnHqVCw5Pu3emelEzP7Fmp7px5MjOy
+/0xfKDnHc7zt3CkYyTp8YAMsexR/eyreXF10q3fzifqB18tvj4Cfk57rB1esb6hb
+c2N6/pZkydXC+q7q1Z9671aNH2srbzyfsfnVQXqppG9ZXkHT/lWhL+vOTMxp+fr5
+Zu5E1op7OWVDk3kfFnxfWTS32SovOTJdfPrh2aZlBwrmVVR1d4aGnxZc+9jfklfW
++OzBwu5cZ8DzsWf0R+GmqYsTyTOHKrZ19O8sHECdKUWLfekdlUcHs5dszJ2+/86X
+3l/avPXCvfldqScWlw9NNRwtDZ7s+pTWuih5Z9E37f3extb8rbv2/Wwv7RnTtn87
+1uJde/lF8dBQTnt7xWDxlaxZfcGl001jC3aMnBx+OfoLzblGUA==
+=jl3u
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/tariqhawis
+
+==================================================================
