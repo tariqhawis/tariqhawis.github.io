@@ -1,16 +1,10 @@
 ---
+layout: product-category
 title: Projects
 hero_title: My Projects
-layout: page
 order: 2
 permalink: /projects/
 hero_image: /img/projects-hero1.jpg
 image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
-hero_height: is-large
-toc: false
-showcase: projects_showcase
+sort: title
 ---
-
-<h2> Soon To Come...</h2>
-
-<strong>sharing my projects include tools, services, and more..</strong>

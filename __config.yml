@@ -1,30 +1,30 @@
 # Site settings
-title: Tariq Hawis
-email: tariqhawis@gmail.com
+title: C.S. Rhymes
+email: your-email@domain.com
 description: > # this means to ignore newlines until "baseurl:"
-  Here where I share my Ideas, researches, projects and contributions to Cybersecurity space and open source community
-  Subscribe and keep updated with my last posts
+  C.S. Rhymes author of How NOT to make a website and How NOT to use a smartphone
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://www.tariqhawis.com # the base hostname & protocol for your site
-twitter_username: tariqhawis
-github_username:  tariqhawis
-image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
+url: https://www.csrhymes.com # the base hostname & protocol for your site
+twitter_username: chrisrhymes
+github_username:  chrisrhymes
+image: https://csrhymes.com/img/csrhymeslogo.png
+gh_sponsor: chrisrhymes
 
 remote_theme: chrisrhymes/bulma-clean-theme
 #theme: bulma-clean-theme
-google_analytics: UA-10799151-3
+google_analytics: UA-49024852-2
 livereload: true
 favicon: /favicon.ico
 
 # Pagination settings
-paginate: 5
+paginate: 6
 paginate_path: "/blog/page:num"
 
 # Disqus Comments
 disqus:
   # Leave shortname blank to disable comments site-wide.
   # Disable comments for any post by adding `comments: false` to that post's YAML Front Matter.
-  shortname: thawes
+  shortname: csrhymes
 
 # Build settings
 markdown: kramdown
@@ -37,12 +37,13 @@ plugins:
   - jekyll-paginate
   - jekyll-redirect-from
   - github-pages
-  - jekyll-feed
 
 sass:
   style: compressed
 
 collections:
+  stories:
+    output: true
   products: 
     output: true
     layout: product
@@ -58,29 +59,37 @@ defaults:
       path: ""
       type: "posts"
     values:
-      author: "Tariq Hawis"
+      author: "C.S. Rhymes"
       layout: post
       hero_image: /img/blog-hero.jpg
-      show_sidebar: false
-      middle_text: true
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "stories"
+    values:
+      author: "C.S. Rhymes"
+      layout: post
+      hero_image: /img/stories.jpg
+  
 
 # SEO
-author:
-  twitter: TariqHawis
-lang: en
+author: 
+  twitter: chrisrhymes
+lang: en_GB
 logo: /img/avatar.png
 twitter:
-  username: TariqHawis
+  username: chrisrhymes
   card: summary_large_image
 facebook:
-  publisher: https://www.facebook.com/Tariq-Hawis-102907161281331/
+  publisher: https://www.facebook.com/CS-Rhymes-1423568567916115
 social:
-  name: Tariq Hawis
+  name: C.S. Rhymes
   links:
-    - https://www.twitter.com/tariqhawis
-    - https://www.facebook.com/Tariq-Hawis-102907161281331/
-    - https://github.com/tariqhawis
+    - https://www.twitter.com/chrisrhymes
+    - https://www.facebook.com/CS-Rhymes-1423568567916115
+    - https://github.com/chrisrhymes
 
-#feed:
-#  collections:
-#    - stories
+feed:
+  collections:
+    - stories

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% if page.middle_text %}
+    {% assign content_size = 'is-medium' %}
+{% endif %}
+<div class="content {{ content_size }}">
+
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
+
+    {{ content }}
+</div>
+
+<div class="tags">
+    {% for tag in page.tags %}
+    <span class="tag is-primary">{{ tag }}</span>
+    {% endfor %}
+</div>
+<div class="content has-text-centered section bg-light">
+    {% include subscribe.html %}
+</div>
+    {% if site.disqus.shortname %}
+      {% include disqus.html %}
+    {% endif %}

@@ -1,10 +1,5 @@
 - name: Blog
   link: /blog/
-  dropdown: 
-    - name: Websites Security
-      link: page-2
-    - name: CTF
-      link: page-2
 - name: Projects
   link: /projects/
 - name: About Me
