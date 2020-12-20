@@ -6,9 +6,10 @@ date: 2020-08-10
 permalink: /:title/
 redirect_from: /2020/08/10/htb-under-construction-web-challange.html
 hero_image: /img/Hack-The-Box-logo.png
-hero_height: is-large
+#hero_height: is-large
 image: https://www.tariqhawis.com/img/Hack-The-Box-logo.png
 tags: HackTheBox HTB CTF jwt node.js sqli burp
+hero_darken: true
 ---
 
 HackTheBox is one of the greatest place to sharpen your skills when it comes to practising real life based penetration testing. 

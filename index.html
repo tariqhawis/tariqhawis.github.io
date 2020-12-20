@@ -1,33 +1,116 @@
 ---
-layout: page
-title: |
-    Tariq Hawis - Cyber Security Expert - Uncovering Hacker Methods
-hero_title: My Mission
+layout: default
+title: Tariq Hawis | Cybersecurity, Linux, Open Source, and IT
 subtitle: |
-    Find your security weakness<br>
-    before hackers do!
-permalink: /
-description: |
-    Learn how to protect your online website, business and data from hackers attacks. 
-    Subscribe and keep updated with last security tips and tricks.
+    sharing my knowledge & experience with the community.. and YOU!
 # image: /img/hero4.jpg
+permalink: /
 hero_image: /img/landing-hero2.jpg
-hero_height: is-large
+#hero_height: is-fullheight
+hero_darken: true
 image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
-is_index: true
 ---
 <br />
-<div class="columns is-centered">
-    <div class="column is-8-desktop is-8-tablet">
+<div class="columns is-multiline is-mobile is-centered">
 
-        <h1 class="has-text-centered">Time to Counter Hackers!</h1>
+    <div class="column is-2-desktop  is-4-tablet is-6-mobile">
+        <img src="/img/avatar1.jpg" width="100%" alt="Who am I?"/>
+    </div>
+
+    <div class="column is-6-desktop is-6-tablet is-12-mobile content">
+
+        <h1 class="has-text-centered">Who Am I?</h1>
             <div class="content is-medium">
             <br>
-                <p>Hello and welcome! My name is Tariq Hawis and I'm a full-time Cyber Security Engineer and an Information Security Consultant.</p>
+                <p>Hello and welcome! My name is Tariq Hawis, and I'm cybersecurity professional with over 13 years of experience.</p>
 
-                <p>I have spent more than a decade of my life helping cybersecurity and open source community with my researches, projects, and technical supports</p>
+                <p>I have spent more than a decade of my life conducts security researches, developes & contributes in security tools, pentests & reports on security bugs, and provides technical consultation and training for IT admins </p>
 
-                <p>This Blog will be a hub for all my works and ideas that I had done and going to do in the future.</p>
+                <p>My goal of this blog is gather and share all my works, ideas, and initiatives in one place.</p>
+            
             </div>
+            <div class="content is-medium is-light has-text-weight-bold">
+                Be sure to sign up below to keep updated with my latest works<style> .gumroad-follow-form-embed { zoom: 1; } .gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after { display: table; line-height: 0; content: ""; } .gumroad-follow-form-embed:after { clear: both; } .gumroad-follow-form-embed * { margin: 0; border: 0; padding: 0; outline: 0; box-sizing: border-box !important; float: left !important; } .gumroad-follow-form-embed input { border-radius: 4px; border-top-right-radius: 0; border-bottom-right-radius: 0; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; background: #fff; border: 1px solid #ddd; border-right: 0; color: #aaa; padding: 10px; box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02); background-position: top right; background-repeat: no-repeat; text-rendering: optimizeLegibility; font-smoothing: antialiased; -webkit-appearance: none; -moz-appearance: caret; width: 65% !important; height: 40px !important; } .gumroad-follow-form-embed button { border-radius: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12); -webkit-transition: all .05s ease-in-out; transition: all .05s ease-in-out; display: inline-block; padding: 11px 15px 12px; cursor: pointer; color: #fff; font-size: 15px; line-height: 100%; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; background: #ae3636; border: 1px solid #9d3131; filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ccfd4, endColorstr=#329ca1, GradientType=0)"; background: -webkit-linear-gradient(#d45c5c, #a13232); background: linear-gradient(to bottom, #d45c5c, #a13232); height: 40px !important; width: 35% !important; } </style> <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" type="hidden" value="6060143311849"> <input name="email" placeholder="Your email address" type="email"> <button data-custom-highlight-color="" type="submit">Subscribe</button> </form>
+            </div>
+            <div class="content is-medium">
+                <p>Want to chat privately? <a href="https://keybase.io/tariqhawis" target="_blank">PGP Key: 0x27816E61A18FAF65</a></p>
+            </div>
+            
     </div>
 </div>
+
+{% for post in site.posts limit:1 %}
+<section class="section">
+    <div class="columns is-multiline">
+        <div class="column is-12">
+            <div class="content">
+                <h2 class="has-text-centered">Latest Post</h2>
+            </div>
+        </div>
+        <div class="column is-12">
+            <section class="hero is-dark">
+                <div class="hero-body">
+                    <div class="columns">
+                        <div class="column is-4">
+                            <figure class="image is-2by1">
+                            <img src="{{ post.image | replace: 'http:', 'https:' }}" alt="{{ post.title }}" />
+                        </figure>
+                        </div>
+                        <div class="column is-8">
+                            <div class="has-text-centered">
+                                <a href="{{ post.url | prepend: site.baseurl }}">
+                                    <h3 class="title is-4">{{ post.title }}</h3>
+                                </a>
+                                <p class="subtitle is-6">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+                                <div class="content">
+                                    <p>{{ post.excerpt }}</p>
+                                </div>
+                                <a href="{{ post.url | prepend: site.baseurl }}" class="button is-info">
+                                    Read more...
+                                </a>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
+<section class="section">
+    <div class="columns is-multiline is-centered">
+        <div class="column is-12">
+            <div class="content">
+                <h2 class="has-text-centered">Latest Project</h2>
+            </div>
+        </div>
+        <div class="column is-12">
+            <section class="hero is-dark">
+                <div class="hero-body">
+                    <div class="columns">
+                        {% assign products = site.products | reverse %}
+                        {% for item in products limit:1 %}
+                        <div class="column is-4">
+                            <figure class="image is-2by1">
+                            <img src="{{ item.image | replace: 'http:', 'https:' }}" alt="{{ item.title }}" />
+                        </figure>
+                        </div>
+                        <div class="column is-8 has-text-centered">
+                            <p class="title is-4">{{ item.title }}</p>
+                            <p class="subtitle is-6">Published: {{ item.date | date: "%b %-d, %Y" }}</p>
+                            <div class="content has-text-centered">
+                                <p>{{ item.excerpt }}</p>
+                            </div>
+                            <div class="has-text-centered">
+                                <a href="{{ item.url }}" class="button is-info">Details</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+

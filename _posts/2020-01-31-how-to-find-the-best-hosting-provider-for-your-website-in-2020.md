@@ -4,10 +4,11 @@ hero_title: How to Find the Best Hosting Provider for your Website in 2020!
 description: Here I will show you my tips to find the best web hosting the you need for your website.  
 date: 2020-01-31
 hero_image: /img/select-hosting-hero1.jpg
-hero_height: is-large
+#hero_height: is-large
 image: /img/select-hosting-hero1.jpg
 published: false
 tags: web hosting virtual server VPS cloud dedicated 
+hero_darken: true
 ---
 
 Choosing the hosting company for running your website is not an easy task. In fact, there are many criteria that should be considered before you decide the best one for you.

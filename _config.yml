@@ -9,9 +9,8 @@ url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis
 github_username:  tariqhawis
 image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
-
+iconURL: assets/default-icon.png
 remote_theme: chrisrhymes/bulma-clean-theme
-#theme: bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
 favicon: /favicon.ico

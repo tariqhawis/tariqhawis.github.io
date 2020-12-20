@@ -4,6 +4,7 @@ title: How to Stay Away from Hackers?
 description: We're living in a world where our life with all its details is ONLINE! How to protect it
 date: 2020-02-05
 published: false
+hero_darken: true
 ---
 
 When I say your data, I mean your life. We're living now in a world where our life that we experience with all its details is ONLINE!

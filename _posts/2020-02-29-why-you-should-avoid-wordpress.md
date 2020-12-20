@@ -6,7 +6,7 @@ date: 2020-02-29
 permalink: /:title/
 redirect_from: /2020/02/29/why-you-should-avoid-wordpress.html
 hero_image: /img/avoid-wordpress-hero.jpg
-hero_height: is-large
+#hero_height: is-large
 image: https://www.tariqhawis.com/img/avoid-wordpress-hero.jpg
 tags: web security wordpress CMS SSG jekyll
 ---

@@ -36,3 +36,4 @@ Cybersecurity moves at a fast pace and I enjoy learning new techniques and using
 ## Contact Me
 
 If you wish to make contact, why not send me a tweet through [twitter](https://twitter.com/TariqHawis)
+<p>In case you want to chat privately.. <a href="https://keybase.io/tariqhawis" target="_blank">PGP Key: 0x27816E61A18FAF65</a></p>
