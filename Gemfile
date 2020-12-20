@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-gem "bulma-clean-theme", ">= 0.10"
+gem "bulma-clean-theme", ">= 0.10.3"
 gem "github-pages", ">= 207", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.13", ">= 0.13.0"
