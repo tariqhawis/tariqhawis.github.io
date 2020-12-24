@@ -2,7 +2,7 @@
 title: Introducing InjectBot v1.0
 subtitle: First Ever GUI SQL Injection Tool
 layout: product
-image: /img/injectbot/hero.png
+image: /img/injectbot/injectbot-logo.png
 seo:
   name: InjectBot SQLi penetration testing tool
   author: Tariq Hawis
@@ -26,7 +26,7 @@ The first ever SQL Injection tool with GUI Interface, high speed results, and le
 
 SQL Injection is a special vulnerability to me, that's because it's the one that introduced me to the Hacking world back in 2007. It's then when I started my career in hacking an bug hunting focusing on this particular vulnerability which was very popular in web applications.
 
-InjectBot was previously called Injr0b0t. In 2008, I built Injr0b0t to automate my work on bug hunting which saved a tremendous time for me; from detecting the vulnerability, to creates the exploit query, to inistiate foothold and backdoor. Injr0b0t was never intended to be public at that time, that's because of the fear from being used by the wrong people.
+In 2008, I built a tool called Injr0b0t to automate my work on bug hunting which saved a tremendous time for me; from detecting the vulnerability, to creates and inject the payload and so on. *Injr0b0t* was never intended to be public at that time, that's because of the fear from being used by the wrong people.
 
 > The years from 2006 until 2014 were considered as glory times for SQL Injection, with millions of websites and web applications vulnerable to it, and it still there to date. reference: [wikipedia.org](https://en.wikipedia.org/wiki/SQL_injection#Examples)
 
@@ -37,7 +37,7 @@ InjectBot was previously called Injr0b0t. In 2008, I built Injr0b0t to automate 
 
 
 
-But now that this reason doesn't make sense anymore with so much hacking tools out there; and the demand I saw from my fellows in security field to have such tool with less impact and high speed results, yet easy to use, I decided to respond to this demanding and start to reproduce my Injr0b0t tool, with focusing on discovers the bug rather than the create any damages on the target which make it more helpful for the web developers and security teams for their security testing process. And that is InjectBot.
+Many things changed since then, we have now white hat hackers, pentesters and red teames who need such tools with easy interface, powerful results, and most importantly, less impact on the target. that's why I decided to reproduce Injr0b0t focusing on three targets: 1- friendly interface, 2- speed results, and 3- less impact on the target. This way it will more helpful for the web developers and security teams to do security testing very quicker and more accurate. And that is InjectBot.
 
 
 # So What is InjectBot?
@@ -54,20 +54,18 @@ InjectBot basically mimics the penetration tester and security analyst by automa
 
 # Why InjectBot?
 
-Unlike other SQLi tools which are being used for long time now, InjectBot has re-defined the security tools from terminal-parameter-based to a web-form-based tool, not only this, but also with the faster results, and that's not just an empty claim (see demo below).
+Unlike other SQLi tools which are being used for long time now, InjectBot has re-defined the security tools from terminal-parameter-based to a form-based tool, not only this, but with bullet options (no overwhelming options), faster results, and last but not least, less impact om the target, leveraging some cool techniques cush as:
 
+1- Web features like session management, has helped the tool to not repeat any request to the target, so if a request send to confirm the vulnerability, it will be saved for the entire time of the user's session with the tool, and that alone reduced a lot of connection numbers and hence reduced the impact on the target.
+
+2- Used multi curl functions. This function has proved by benchmarks its unbelievable speed response compared to normal curl and other functions like file_get_content or get_headers.
 
 
 # DEMO
 
-
 A complete scan to a web app showing all the above features in only 23 seconds.
 
-
-
-![InjectBot SQLi scanning Demo](https://www.tariqhawis.com/img/injectbot/injectbot.gif)
-
-
+![InjectBot SQLi scanning Demo](https://www.tariqhawis.com/img/injectbot/injectbot-demo.gif)
 
 
 # Who should use InjectBot?
@@ -75,31 +73,39 @@ A complete scan to a web app showing all the above features in only 23 seconds.
 Whether you are a web developer or pen tester, red or blue teamer, this tools would be perfect to be in your tools arsenal to test web applications against SQL Injection vulnerabilities.
 
 
-
-# Requirements
-
-* Option #1: Use Docker engine to pull and run injectbot image as described under installation section below, for more details about how to use docker, refer to [Docker Docs](https://docs.docker.com/get-docker/)
-
-* Option #2: A need your own web server up and running and have PHP 7.4 plus php-curl library.
-
-
-
 # Installation
 
-The easiest way is to use the docker image which already has injectbot installed & updated at docker hub, just run this below command:
+
+Choose your best option below then open at your browser: `http://localhost:11111`
+
+
+- Option #1: Suitable for linux and MacOS users..
+
+Just run the script `run.sh` that comes with the script as follows 
 
 ```bash
-docker run --name injectbot -d -p 8080:80 tariqhawis/injectbot:latest
+./run.sh
 ```
 
-If you have not received any error message, go to the URL: `http://localhost:8080/`
-Now InjectBot is up and running.
-
-Second option is to clone this repository and point your web server to the cloned path.
-
-If you have any issue with installation, contact me at [github issues](https://github.com/tariqhawis/injectbot/issues), and I will be glad to help:)
+>Note: in this option you need to have php and php-curl installed in you machine. 
 
 
+- Option #2: Suitable for Windows (and Linux & MacOS) users..
+
+Your best option here is to use docker, for that you may build your image and run the container:
+
+```bash
+docker build -t injectbot .
+docker run -d --name injectbot -p 11111:80 injectbot
+```
+ 
+Or call the updated image from our docker hub:
+
+```bash
+docker run --name injectbot -d -p 11111:80 tariqhawis/injectbot:latest
+```
+
+If you have any issue with the installation, contact me at [github issues](https://github.com/tariqhawis/injectbot/issues), and I will be glad to help:)
 
 
 # Version History/Changelog
@@ -129,7 +135,6 @@ InjectBot v1.0 - rebuild and published release from the old private 0.5 Injectbo
 * [+] New front-end design based on Bootstrap 4.
 
 
-
 # Have an idea for InjectBot?
 
 There are plenty of improvements this script could use, If you want to add something and have any cool idea related to this tool, please contact me using [github issues](https://github.com/tariqhawis/injectbot/issues) and I will update the master version.
@@ -137,11 +142,9 @@ There are plenty of improvements this script could use, If you want to add somet
 If you are a PHP developer yourself, feel free to PR this tool, and I will merge the good ideas.
 
 
-
 # Looking for a useful SQL Injection Course?
 
 Contact me if you are looking for a course on web penetration testing, web application security, or a course explosively on SQL Injection, I am preparing for attackers and defenders (100% technical).
-
 
 
 # Advisory
