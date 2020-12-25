@@ -13,27 +13,18 @@ toc: true
 
 ## About Me
 
-Hello and welcome! My name is Tariq Hawis and I'm a Cybersecurity Engineer, my works involves monitoring security events, analyze applications for security flaws, and develop security tools. In my spare time, I follow the last news in cybersecurity and technology worlds, and I also write posts at tariqhawis.com.
+Hello and welcome! My name is Tariq Hawis and I'm a security professional with over 13 years of experience.
+
+In my full time job I do security events analysis, security systems monitoring, white/black box analysis on web applications, and develop automation tools for my own working tasks using python and bash languages. 
+
+I am also an active member in the security and open source community with different kinds of contributions here and there; answering questions at Quora and StackOverFlow; fix suggestions at Github issues, and many others.
+
+In addition, I work on my own website, sharing my knowledge and experience and writing articles about security issues among other IT related stuff. And Finally I save some time to develop my own open source applications such as InjectBot, which I share with my other tools at Github.
 
 
-## Cybersecurity
+# Get in touch
+You may reach me out at [Twitter](https://www.twitter.com/tariqhawis). 
 
-### Penetration Testing
-
- I'm specialist in performing penetration testing on web applications to find security vulnerabilities. I do white and black box testing by analyzing source codes and examine the data flow of the given application in order to find the weak spots throughout the web pages. In Addition to my own tools, I often use other tools like Metasploit, Burp suite, and Nmap.
-
-
-### Security Analyst / Digital Forensics
-
-As a full-time cybersecurity engineer, I monitor the security events regularly using Splunk and Alienvault to collect events from many sources and correlate them to obtain evidence of cyber threats.
-
-In case of security incidents, I work with the team to mitigate the impact, perform digital forensic using Tcpdump, Wireshark, Autopsy/Sleuth Kit, and Volatility to extract artifacts from system events, network traffic, disk images, and memory dumps to reveal clues about the case.
+For private chat, my PGP key: [0x27816E61A18FAF65](https://keybase.io/tariqhawis)
 
 
-Cybersecurity moves at a fast pace and I enjoy learning new techniques and using new tools to help make my work more rewarding. I especially enjoy educating other people about what I learned. During the past 13 years, I did many remote classes and on-site training that I can count, covering penetration testing and digital forensic topics, in addition to my contribution to multi security awareness campaigns. 
-
-
-## Contact Me
-
-If you wish to make contact, why not send me a tweet through [twitter](https://twitter.com/TariqHawis)
-<p>In case you want to chat privately.. <a href="https://keybase.io/tariqhawis" target="_blank">PGP Key: 0x27816E61A18FAF65</a></p>
