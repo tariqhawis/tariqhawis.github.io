@@ -1,5 +1,5 @@
 ---
-layout: product-category
+layout: project-category
 title: Projects
 hero_title: My Projects
 order: 2

@@ -21,20 +21,19 @@ image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
         <h1 class="has-text-centered">Who Am I?</h1>
             <div class="content is-medium">
             <br>
-                <p>Hello and welcome! My name is Tariq Hawis, and I'm a cybersecurity professional with over 13 years of experience.</p>
+            <p>Hello and welcome! My name is Tariq Hawis and I am an active member in the security and open source community by answering to questions in technical forums and social networks; share fixes to bug tracking sites, and writing HowTo articles in my blog.</p>
 
-                <p>I have spent more than a decade of my life conducts security researches, develops security tools, pentests & reports on security bugs, and provides technical consultation and training for IT admins.</p>
-
-                <p>My goal for this blog is to gather and share all my works, ideas, and initiatives in one place.</p>
+            <p>In my full time job I do security events analysis, security systems monitoring, white/black box analysis on web applications, and develop tools to automate my working tasks using python and bash languages. </p>
             
+            <p>At my own lab, I like testing and benchmarking new and interesting cybersecurity tools to discover their abilities and features, such as SIEM, vulnerability scanning, penetration and forensics tools against virtual targets; and develop my own security tools such as [InjectBot](/products/injectbot-first-ever-gui-sql-injection-tool.html)which I share in my github and here.</p>
             </div>
             <div class="content is-medium is-light has-text-weight-bold">
                 Be sure to sign up below to keep updated with my latest works<style> .gumroad-follow-form-embed { zoom: 1; } .gumroad-follow-form-embed:before, .gumroad-follow-form-embed:after { display: table; line-height: 0; content: ""; } .gumroad-follow-form-embed:after { clear: both; } .gumroad-follow-form-embed * { margin: 0; border: 0; padding: 0; outline: 0; box-sizing: border-box !important; float: left !important; } .gumroad-follow-form-embed input { border-radius: 4px; border-top-right-radius: 0; border-bottom-right-radius: 0; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; font-size: 15px; line-height: 20px; background: #fff; border: 1px solid #ddd; border-right: 0; color: #aaa; padding: 10px; box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.02); background-position: top right; background-repeat: no-repeat; text-rendering: optimizeLegibility; font-smoothing: antialiased; -webkit-appearance: none; -moz-appearance: caret; width: 65% !important; height: 40px !important; } .gumroad-follow-form-embed button { border-radius: 4px; border-top-left-radius: 0; border-bottom-left-radius: 0; box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12); -webkit-transition: all .05s ease-in-out; transition: all .05s ease-in-out; display: inline-block; padding: 11px 15px 12px; cursor: pointer; color: #fff; font-size: 15px; line-height: 100%; font-family: -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif; background: #ae3636; border: 1px solid #9d3131; filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#5ccfd4, endColorstr=#329ca1, GradientType=0)"; background: -webkit-linear-gradient(#d45c5c, #a13232); background: linear-gradient(to bottom, #d45c5c, #a13232); height: 40px !important; width: 35% !important; } </style> <form action="https://gumroad.com/follow_from_embed_form" class="form gumroad-follow-form-embed" method="post"> <input name="seller_id" type="hidden" value="6060143311849"> <input name="email" placeholder="Your email address" type="email"> <button data-custom-highlight-color="" type="submit">Subscribe</button> </form>
             </div>
             <div class="content is-medium">
-                <p>Want to chat privately? <a href="https://keybase.io/tariqhawis" target="_blank">PGP Key: 0x27816E61A18FAF65</a></p>
+                <p>Contact me privately: <a href="https://keybase.io/tariqhawis/key.asc" target="_blank">PGP public key</a></p>
             </div>
-            
+
     </div>
 </div>
 
@@ -77,19 +76,20 @@ image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
 </section>
 {% endfor %}
 
+{% for writeup in site.writeups limit:1 %}
 <section class="section">
     <div class="columns is-multiline is-centered">
         <div class="column is-12">
             <div class="content">
-                <h2 class="has-text-centered">Latest Project</h2>
+                <h2 class="has-text-centered">Latest Writeup</h2>
             </div>
         </div>
         <div class="column is-12">
             <section class="hero is-dark">
                 <div class="hero-body">
                     <div class="columns">
-                        {% assign products = site.products | reverse %}
-                        {% for item in products limit:1 %}
+                        {% assign writeups = site.writeups | reverse %}
+                        {% for item in writeups limit:1 %}
                         <div class="column is-4">
                             <figure class="image is-2by1">
                             <img src="{{ item.image | replace: 'http:', 'https:' }}" alt="{{ item.title }}" />
@@ -111,4 +111,41 @@ image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
         </div>
     </div>
 </section>
+{% endfor %}
 
+{% for project in site.projects limit:1 %}
+<section class="section">
+    <div class="columns is-multiline is-centered">
+        <div class="column is-12">
+            <div class="content">
+                <h2 class="has-text-centered">Latest Project</h2>
+            </div>
+        </div>
+        <div class="column is-12">
+            <section class="hero is-dark">
+                <div class="hero-body">
+                    <div class="columns">
+                        {% assign projects = site.projects | reverse %}
+                        {% for item in projects limit:1 %}
+                        <div class="column is-4">
+                            <figure class="image is-2by1">
+                            <img src="{{ item.image | replace: 'http:', 'https:' }}" alt="{{ item.title }}" />
+                        </figure>
+                        </div>
+                        <div class="column is-8 has-text-centered">
+                            <p class="title is-4">{{ item.title }}</p>
+                            <div class="content has-text-centered">
+                                <p>{{ item.excerpt }}</p>
+                            </div>
+                            <div class="has-text-centered">
+                                <a href="{{ item.url }}" class="button is-info">Details</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endfor %}

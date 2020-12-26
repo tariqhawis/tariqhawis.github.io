@@ -14,8 +14,8 @@ layout: default
         <p class="title is-3">{{ page.title }}</p>
         <p class="subtitle is-3">{{ page.subtitle }}</p>
         <p class="title is-4 has-text-right">{{ page.price }}</p>
-        {% if page.product_code %}
-        <p class="subtitle is-5 has-text-right">{{ page.product_code }}</p>
+        {% if page.project_code %}
+        <p class="subtitle is-5 has-text-right">{{ page.project_code }}</p>
         {% endif %}
         
         {% if page.rating %}
@@ -48,10 +48,10 @@ layout: default
         </div>
     </div>
 
-    {% if site.data.reviews[page.product_code] %}
+    {% if site.data.reviews[page.project_code] %}
     <div class="column is-12">
         <p class="title is-4">Reviews</p>
-        {% for review in site.data.reviews[page.product_code] %}
+        {% for review in site.data.reviews[page.project_code] %}
         {% include review.html %}
         {% endfor %}
     </div>

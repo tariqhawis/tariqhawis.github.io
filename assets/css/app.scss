@@ -1,7 +1,7 @@
 ---
 ---
 $primary: #333;
-$secondary: #eee;
+$secondary: rgb(238, 238, 238);
 $info: #981430;
 $pagination-current-background-color: $info;
 $pagination-current-border-color: $info;
@@ -46,3 +46,7 @@ div.highlight {
 .content {
     font-size: 20px;
 }
+
+.cryptedmail:after {
+    content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
+  }

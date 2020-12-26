@@ -2,5 +2,7 @@
   link: /projects/
 - name: Blog
   link: /blog/
-- name: About
-  link: /about/
+- name: CTF
+  link: /ctf/
+- name: Contact Me
+  link: /contact-me/

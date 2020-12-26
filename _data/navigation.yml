@@ -1,6 +1,8 @@
-- name: Blog
-  link: /blog/
 - name: Projects
   link: /projects/
-- name: About Me
-  link: /about/
+- name: Blog
+  link: /blog/
+- name: CTF
+  link: /ctf/
+- name: Contact Me
+  link: /contact-me/

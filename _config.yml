@@ -42,9 +42,13 @@ sass:
   style: compressed
 
 collections:
-  products: 
+  projects: 
     output: true
-    layout: product
+    layout: project
+    show_sidebar: false
+  writeups:
+    output: true
+    layout: post
     show_sidebar: false
 
 exclude: [node_modules, gulpfile.js, vendor]

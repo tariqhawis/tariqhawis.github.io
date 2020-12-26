@@ -1,7 +1,7 @@
 ---
 title: Introducing InjectBot v1.0
 subtitle: First Ever GUI SQL Injection Tool
-layout: product
+layout: project
 image: /img/injectbot/injectbot-logo.png
 seo:
   name: InjectBot SQLi penetration testing tool
