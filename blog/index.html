@@ -1,48 +1,11 @@
 ---
 layout: blog
-title: Tariq Hawis's Blog
+title: Blog
 subtitle: My tips & tricks, ideas, and researches in cyber security, linux, and IT.
-hero_title: Tariq hawis's Blog
 order: 2
 description: "Learn how to build a secure website, protect from web vulnerabilities, explain OWASP 10, security bugs, and more"
 permalink: /blog/index.html
 image: /img/blog-hero.jpg
 hero_image: /img/blog-hero.jpg
+show_sidebar: true
 ---
-
-<div class="container">
-    <section class="section">
-        <div class="columns is-multiline">
-            <div class="column is-12">
-                <div class="content">
-                    <p>My tips and tricks to make your website and online profiles secure and far away from hackers.</p>
-                </div>
-            </div>
-            {% for item in site.posts %}
-            <div class="column is-4">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-2by1">
-                        <img src="{{ item.hero_image }}" alt="{{ item.title }}" />
-                    </figure>
-                    </div>
-                    <div class="card-content">
-                            <p class="title is-5">{{ item.title }}</p>
-                        <div class="content">
-                            <p>{{ item.description }}</p>
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <p class="card-footer-item">
-                        <span>
-                            <a href="{{ item.url }}" class="button is-info">Read more</a>
-                        </span>
-                        </p>
-                    </footer>
-                </div>
-
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-</div>

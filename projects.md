@@ -1,7 +1,7 @@
 ---
 layout: project-category
 title: Projects
-hero_title: My Projects
+subtitle: Security management, penetration testing, bash scripts, and other automation tools
 order: 2
 permalink: /projects/
 hero_image: /img/projects-hero.jpg

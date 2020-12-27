@@ -13,7 +13,7 @@ iconURL: assets/default-icon.png
 remote_theme: chrisrhymes/bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
-favicon: /avatar.png
+favicon: /avatar.jpg
 
 # Pagination settings
 paginate: 5

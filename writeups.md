@@ -1,8 +1,7 @@
 ---
 layout: ctf-category
-title: WriteUps
-hero_title: My CTF Write-ups
-subtitle: WriteUps and walkthrough of HackTheBox and TryHackMe CTF challenges
+title: CTF WriteUps
+subtitle: For HackTheBox and TryHackMe challenges
 order: 2
 permalink: /ctf/
 hero_image: /img/ctf-hero.jpg
