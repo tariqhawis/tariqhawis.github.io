@@ -13,7 +13,7 @@ iconURL: assets/default-icon.png
 remote_theme: chrisrhymes/bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
-favicon: /favicon.ico
+favicon: /avatar.png
 
 # Pagination settings
 paginate: 5
@@ -59,9 +59,14 @@ defaults:
   -
     scope:
       path: ""
+    values:
+      hero_darken: true
+      author: "Tariq Hawis"
+  -
+    scope:
+      path: ""
       type: "posts"
     values:
-      author: "Tariq Hawis"
       layout: post
       hero_image: /img/blog-hero.jpg
       show_sidebar: false

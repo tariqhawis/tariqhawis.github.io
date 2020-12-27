@@ -7,7 +7,7 @@ permalink: /:title/
 redirect_from: /2020/02/29/why-you-should-avoid-wordpress.html
 hero_image: /img/avoid-wordpress-hero.jpg
 #hero_height: is-large
-image: https://www.tariqhawis.com/img/avoid-wordpress-hero.jpg
+image: /img/avoid-wordpress-hero.jpg
 tags: web security wordpress CMS SSG jekyll
 ---
 
@@ -24,7 +24,7 @@ Here are the other true facts.
 
 Since WordPress is build on dynamic-pages, the type that built with a server-side program language, which for WP case is PHP. The main disadvantage for a dynamic website is the fact that it will rely on server's resources to process the operations inside the pages. And imagine that each page will be processed *each time* it requested by a visitor to the page. That will eventually lead to slowness issue, and sometimes to crash the website entirely.
 
-![WordPress crash with 504 gateway time-out error](/img/wordpress-crash-504-gateway-time-out-error.png)
+![WordPress crash with 504 gateway time-out error](/img/posts/wordpress-crash-504-gateway-time-out-error.png)
 
 You may not face that at the early stages of your website, but later when you got more recognized and start having a descent traffic, you will start suffering slowness or even crash problematic. At this stage, you'll start looking for a more expensive hosting provider, add CDN, premium lightweight themes, premium boost plugins, and maybe pay for special service to an engineer or a company to solve your website's problem. 
 
@@ -48,7 +48,7 @@ For two reasons.
 
 To date, The last count from [WordPress plugins page](https://wordpress.org/plugins/) says 55,791 of free plugins available to download. That's an enough number to motivate bug hunters to start install and analyze plugins until find a security bug. As a result of the large-scale bugs hunting around the world against WP Plugins, there are thousands of discovered vulnerabilities disclosed to the Internet in several online vulnerability databases; such as [CVE](https://www.cvedetails.com/) and [wpvulndb.com](https://wpvulndb.com/plugins), the last one alone recorded so far 3858 of unique vulnerabilities in their database; that includes findings in WP core, plugins, and themes. Now this is a big figure, and it makes WP the top CMS with disclosed vulnerabilities.
 
-![WordPress Vulnerabilities](/img/wordpress-vulnerabilities.png)
+![WordPress Vulnerabilities](/img/posts/wordpress-vulnerabilities.png)
 
 
 ### 2. It's the Most Popular CMS
@@ -57,7 +57,7 @@ Hackers don't like wasting their valuable time finding vulnerabilities on some r
 
 That said, since WP is the most popular CMS with 35% of all the websites on the Internet using it --according to W3techs- and for the huge number of disclosed vulnerabilities that already disclosed, it's sensible that they choose this particular CMS to focus on.
 
-![CMS Infections 2018-2019](/img/cms-infections.png)
+![CMS Infections 2018-2019](/img/posts/cms-infections.png)
 
 The concept used by hackers to infect devices is simple. They create automated scripts -can be available for free also!- which scan millions of websites for known vulnerabilities throughout the web. When a scan identifies a target, the exploit delivers its payload to obtain access to the environment and deploy other malicious tools, later, this infected machine will be used as a botnet to scan other devices worldwide; and ball keeps rolling.
 
@@ -70,7 +70,7 @@ Fortunately, there are modern platforms that came up lately which become over ti
 
 While in dynamic-sites fashion, website's pages are delivered on-demand to the visitors, which unnecessary consume server's resources. SSG-based website generates all the pages of the website *once* when there's actually changes to the site. This means there's no moving parts in the deployed website. Caching gets much easier, performance goes up and static sites are far more secure. 
 
-![Static Sites vs Dynamic Sites](/img/dynamic-x-static.png)
+![Static Sites vs Dynamic Sites](/img/posts/dynamic-x-static.png)
 
 
 If you want to know more about SSGs and how to build one, check out my other post [How to Launch a Secure Website in 2020]({% post_url 2020-02-14-how-to-launch-a-secure-website-in-2020 %})

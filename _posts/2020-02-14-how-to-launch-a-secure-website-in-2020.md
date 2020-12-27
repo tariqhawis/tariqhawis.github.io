@@ -7,16 +7,15 @@ permalink: /:title/
 redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020.html
 hero_image: /img/secure-website-hero.jpg
 #hero_height: is-large
-image: https://www.tariqhawis.com/img/secure-website-hero1.jpg
+image: /img/secure-website-hero.jpg
 tags: static site generators jekyll github pages secure website
-hero_darken: true
 ---
 
 Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 
 
 Today, almost every website owner is aware of web attacks and the existence of hackers as threat of their websites.
 
-![Biggest data breaches in 21st century](/img/cso_17-account-breaches.jpg)
+![Biggest data breaches in 21st century](/img/posts/cso_17-account-breaches.jpg)
 
 #### So what caused all this chaos?
 
@@ -31,7 +30,7 @@ This repeated web incidents have made a bad reputation to the dynamic websites, 
 
 This modern approach has become the best alternative to dynamic website that has all sorts of programming variables, functions, classes, database calls that increase the potential vulnerabilities in your website.
 
-![Dynamic Vs Static Websites](/img/dynamic-x-static.png)
+![Dynamic Vs Static Websites](/img/posts/dynamic-x-static.png)
 <small>*(source: gitlab)*</small>
 
 This difference is giving the static websites many advantages over the dynamic ones, in terms of security, speed, cost, and scalability.
@@ -59,7 +58,7 @@ While with dynamic sites it's common to have unexpected traffic peaks that crash
 
 There are many modern Generators become available, the most commons are Jekyll, Next, Hugo, Gatsby, Hexo, and Nuxt. So you pick one of those generators which will take care of the coding stuff and let you focus on your content only.
 
-![How Static Site Generators Work](/img/ssgs.png)
+![How Static Site Generators Work](/img/posts/ssgs.png)
 <small>*source: jekyllrb.com*</small>
 
 I prefer *Jekyll* for many reasons, it has active community, it's the one that established many of the patterns that other SSGs are now using, from metadata in front matter and structured data folders, to support for Markdown, expressive Liquid templating, and support for categories and tags.
@@ -155,7 +154,7 @@ Server running... press ctrl-c to stop.
 
 Now open your favorite browser and put this link: [http://127.0.0.1:4000](http://127.0.0.1:4000/), you will see a default page from jekyll Saying welcome to you:
 
-![New Jekyll Site](/img/new-jekyll-site.png) 
+![New Jekyll Site](/img/posts/new-jekyll-site.png) 
 
 Yes I know, it looks awful. That's the look of the default gem-based theme called Minima, there are many themes available on the Internet for Jekyll here are some links:
 
@@ -207,7 +206,7 @@ So you made up your mind, and chose to build a static site, **does that makes yo
 
 Even with a static website, you won't get a 100 percent of protection. In fact, there are still ever-present security threats that can always be there like using a dictionary password or having outdated or missconfigured service on the server. 
 
-![Percentage of Attack Vectors](/img/attack-vectors.jpg)
+![Percentage of Attack Vectors](/img/posts/attack-vectors.jpg)
 
 So what you need here is to pay attention to some security principles, things like making your passwords complex, save it away from unauthorized parties, and keep your recovery email address unknown for anyone on the Internet (like don't use it in social sites or share it with anybody).
 

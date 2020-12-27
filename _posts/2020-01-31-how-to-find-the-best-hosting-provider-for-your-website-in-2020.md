@@ -8,7 +8,6 @@ hero_image: /img/select-hosting-hero1.jpg
 image: /img/select-hosting-hero1.jpg
 published: false
 tags: web hosting virtual server VPS cloud dedicated 
-hero_darken: true
 ---
 
 Choosing the hosting company for running your website is not an easy task. In fact, there are many criteria that should be considered before you decide the best one for you.
