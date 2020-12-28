@@ -4,7 +4,7 @@ hero_title: HTB Under Construction Web Challenge
 description: Walk-through hack the box's web challenge CTF called Under Construction
 date: 2020-08-10
 permalink: /:title/
-#redirect_from: /htb-under-construction-web-challange.html
+redirect_from: /ctf/htb-under-construction-web-challange/
 hero_image: /img/Hack-The-Box-logo.png
 #hero_height: is-large
 image: /img/Hack-The-Box-logo.png
