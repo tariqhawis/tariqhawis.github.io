@@ -1,0 +1,43 @@
+{
+  "name": "tariqhawis.github.io",
+  "version": "1.0.5",
+  "description": "Tariq Hawis personal site, cybersecurity and hacking tips and tricks, CTF writeups and walkthrough, general linux and open source topics, and some stories from my professional life.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tariqhawis/tariqhawis.github.io.git"
+  },
+  "keywords": [
+    "cybersecurity",
+    "hacking_tools",
+    "CTF",
+    "writeups",
+    "walkthrough",
+    "hackthebox",
+    "tryhackme",
+    "hackerone",
+    "OWASP10",
+    "web_vulnerability",
+    "bufferoverflow",
+    "stackoverflow",
+    "linux",
+    "opensource"
+  ],
+  "author": "Tariq Hawis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tariqhawis/tariqhawis.github.io/issues"
+  },
+  "homepage": "https://github.com/tariqhawis/tariqhawis.github.io#readme",
+  "devDependencies": {
+    "crypto-js": "^3.1.9-1",
+    "fs": "0.0.1-security",
+    "gulp": "^4.0.2",
+    "gulp-util": "^3.0.8",
+    "marked": "^1.2.7",
+    "through2": "^2.0.3"
+  }
+}

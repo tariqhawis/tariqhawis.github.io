@@ -9,6 +9,7 @@ hero_image: /img/avoid-wordpress-hero.jpg
 #hero_height: is-large
 image: /img/avoid-wordpress-hero.jpg
 tags: web security wordpress CMS SSG jekyll
+toc: true
 ---
 
 WordPress is a web-based Content Management System -aka CMS- that allow users to create, manage, and modify content on a website, without needing to know anything about code. 

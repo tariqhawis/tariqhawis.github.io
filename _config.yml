@@ -8,8 +8,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis
 github_username:  tariqhawis
-image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
-iconURL: assets/default-icon.png
+image: https://www.tariqhawis.com/img/avatar.png
 remote_theme: chrisrhymes/bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
@@ -17,7 +16,7 @@ favicon: /favicon.ico
 
 # Pagination settings
 paginate: 5
-paginate_path: "/blog/page:num"
+paginate_path: "/howto/page:num"
 
 # Disqus Comments
 disqus:
@@ -50,8 +49,10 @@ collections:
     output: true
     layout: post
     show_sidebar: false
+  stories:
+    output: true
 
-exclude: [node_modules, gulpfile.js, vendor]
+exclude: [node_modules, gulpfile.js, vendor, package.json]
 
 footer_menu: footer_menu
 
@@ -68,9 +69,17 @@ defaults:
       type: "posts"
     values:
       layout: post
-      hero_image: /img/blog-hero.jpg
+      hero_image: /img/stories-hero.jpg
       show_sidebar: false
       middle_text: true
+  -
+    scope:
+      path: ""
+      type: "stories"
+    values:
+      author: "Tariq Hawis"
+      layout: post
+      hero_image: /img/stories-hero.jpg
 
 # SEO
 author:

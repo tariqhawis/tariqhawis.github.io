@@ -9,6 +9,7 @@ hero_image: /img/secure-website-hero.jpg
 #hero_height: is-large
 image: /img/secure-website-hero.jpg
 tags: static site generators jekyll github pages secure website
+toc: true
 ---
 
 Back in the day, people had no concern about having a secure website. It was not until security flaws in the websites become frequent and the largest companies in the world had reported with millions of account breaches. 

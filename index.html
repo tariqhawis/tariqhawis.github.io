@@ -35,12 +35,50 @@ image: /img/tariqhawis-security-blog.png
     </div>
 </div>
 
+
+{% for project in site.projects limit:1 %}
+<section class="section">
+    <div class="columns is-multiline is-centered">
+        <div class="column is-12">
+            <div class="content">
+                <h2 class="has-text-centered">Latest Project</h2>
+            </div>
+        </div>
+        <div class="column is-12">
+            <section class="hero is-dark">
+                <div class="hero-body">
+                    <div class="columns">
+                        {% assign projects = site.projects | reverse %}
+                        {% for item in projects limit:1 %}
+                        <div class="column is-4">
+                            <figure class="image is-2by1">
+                            <img src="{{ item.image | replace: 'http:', 'https:' }}" alt="{{ item.title }}" />
+                        </figure>
+                        </div>
+                        <div class="column is-8 has-text-centered">
+                            <p class="title is-4">{{ item.title }}</p>
+                            <div class="content has-text-centered">
+                                <p>{{ item.excerpt }}</p>
+                            </div>
+                            <div class="has-text-centered">
+                                <a href="{{ item.url }}" class="button is-info">Details</a>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
+{% endfor %}
+
 {% for post in site.posts limit:1 %}
 <section class="section">
     <div class="columns is-multiline">
         <div class="column is-12">
             <div class="content">
-                <h2 class="has-text-centered">Latest Post</h2>
+                <h2 class="has-text-centered">Latest HowTo</h2>
             </div>
         </div>
         <div class="column is-12">
@@ -111,20 +149,21 @@ image: /img/tariqhawis-security-blog.png
 </section>
 {% endfor %}
 
-{% for project in site.projects limit:1 %}
+
+{% for story in site.stories limit:1 %}
 <section class="section">
     <div class="columns is-multiline is-centered">
         <div class="column is-12">
             <div class="content">
-                <h2 class="has-text-centered">Latest Project</h2>
+                <h2 class="has-text-centered">Latest Stories</h2>
             </div>
         </div>
         <div class="column is-12">
             <section class="hero is-dark">
                 <div class="hero-body">
                     <div class="columns">
-                        {% assign projects = site.projects | reverse %}
-                        {% for item in projects limit:1 %}
+                        {% assign stories = site.stories | reverse %}
+                        {% for item in stories limit:1 %}
                         <div class="column is-4">
                             <figure class="image is-2by1">
                             <img src="{{ item.image | replace: 'http:', 'https:' }}" alt="{{ item.title }}" />
