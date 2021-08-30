@@ -151,7 +151,7 @@ Where:
 
 `_layouts`: These are the HTML templates that wrap posts
 
-` _posts`: Your posts are saved here.
+`_posts`: Your posts are saved here.
 
 `_sass`: These are sass partials which will then be processed into a single stylesheet main.css
 
