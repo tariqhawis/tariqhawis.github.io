@@ -5,3 +5,4 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.13", ">= 0.13.0"
 end
 gem 'jekyll-redirect-from', '>= 0.15.0'
+gem 'webrick'
