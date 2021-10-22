@@ -22,7 +22,7 @@ redirect_from:
     - /projects/injectbot-the-easiest-and-fastest-SQLi-pentest-tool
 ---
 
-The first ever SQL Injection tool with GUI Interface, high speed results, and less intense on the target.
+The first-ever SQL Injection tool with GUI Interface, high-speed results, and less intense on the target.
 
 SQL Injection is a special vulnerability to me, that's because it's the one that introduced me to the Hacking world back in 2007. It's then when I started my career in hacking an bug hunting focusing on this particular vulnerability which was very popular in web applications.
 
@@ -112,10 +112,10 @@ If you have any issue with the installation, contact me at [github issues](https
 
 InjectBot v1.0 - rebuild and published release from the old private 0.5 Injectbot 2009.
 
-* [+] Complete transition from procedural to object-oriented structure.
+* [+] Complete transition from procedural to the object-oriented structure.
 	* [-] Troubleshooting has become much easier with modularity.
 	* [-] Scalability is now possible, adding features such as new SQLi techniques is much easier.
-	* [-] The code structure is understandable, any developer who wants to jump in can understand the idea of each step, also comments added for that purpose.
+	* [-] The code structure is understandable, any developer who wants to jump in can understand the idea of each step, also comments are added for that purpose.
 
 * [+] Increase the speed of HTTP response by 20 times
 	* [-] Use Multi cURL functions instead of file_get_contents for faster response.
@@ -137,7 +137,7 @@ InjectBot v1.0 - rebuild and published release from the old private 0.5 Injectbo
 
 # Have an idea for InjectBot?
 
-There are plenty of improvements this script could use, If you want to add something and have any cool idea related to this tool, please contact me using [github issues](https://github.com/tariqhawis/injectbot/issues) and I will update the master version.
+There are plenty of improvements this script could use, If you want to add something and have any cool ideas related to this tool, please contact me using [github issues](https://github.com/tariqhawis/injectbot/issues) and I will update the master version.
 
 If you are a PHP developer yourself, feel free to PR this tool, and I will merge the good ideas.
 
@@ -150,8 +150,8 @@ Contact me if you are looking for a course on web penetration testing, web appli
 # Advisory
 
 This tool should be used for authorized penetration testing and/or educational purposes only. 
-Any misuse of this software will not be the responsibility of the author or of any other collaborator. 
-Use it at your own networks and/or with the network owner's permission.
+Any misuse of this software will not be the responsibility of the author or any other collaborator. 
+Use it at your networks and/or with the network owner's permission.
 
 
 GPL-3.0 License 2020 InjectBot&trade; - By Tariq Hawis
