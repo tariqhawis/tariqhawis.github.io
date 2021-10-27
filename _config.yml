@@ -7,9 +7,9 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://www.tariqhawis.com # the base hostname & protocol for your site
 twitter_username: tariqhawis
-github_username:  tariqhawis
-image: https://www.tariqhawis.com/img/tariqhawis-security-blog.png
-iconURL: assets/default-icon.png
+github_username: tariqhawis
+image: https://www.tariqhawis.com/img/tariqhawis-security-blog.webp
+iconURL: assets/default-icon.webp
 remote_theme: chrisrhymes/bulma-clean-theme
 google_analytics: UA-10799151-3
 livereload: true
@@ -37,12 +37,13 @@ plugins:
   - jekyll-redirect-from
   - github-pages
   - jekyll-feed
+  - jekyll-admin
 
 sass:
   style: compressed
 
 collections:
-  projects: 
+  projects:
     output: true
     layout: project
     show_sidebar: false
@@ -56,19 +57,17 @@ exclude: [node_modules, gulpfile.js, vendor]
 footer_menu: footer_menu
 
 defaults:
-  -
-    scope:
+  - scope:
       path: ""
     values:
       hero_darken: true
       author: "Tariq Hawis"
-  -
-    scope:
+  - scope:
       path: ""
       type: "posts"
     values:
       layout: post
-      hero_image: /img/blog-hero.jpg
+      hero_image: /img/blog-hero.webp
       show_sidebar: false
       middle_text: true
 
@@ -76,7 +75,7 @@ defaults:
 author:
   twitter: TariqHawis
 lang: en
-logo: /img/avatar.png
+logo: /img/avatar.webp
 twitter:
   username: TariqHawis
   card: summary_large_image
