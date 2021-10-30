@@ -7,7 +7,7 @@ permalink: /:title/
 redirect_from: /2020/02/29/why-you-should-avoid-wordpress.html
 hero_image: /img/avoid-wordpress-hero.webp
 #hero_height: is-large
-image: /img/avoid-wordpress-hero.webp
+image: /img/avoid-wordpress-600x400.webp
 tags: web security wordpress CMS SSG jekyll
 ---
 

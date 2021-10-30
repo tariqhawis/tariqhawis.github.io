@@ -2,7 +2,7 @@ change images to webp:
 
 sed -E 's/!\[([^]]*)\]\(([^()]*)\.webp\)/<picture>\
 <source srcset=\"\2\.webp\" type=\"image\/webp\">\
-<img src=\"\2.jpg\" alt=\"\1\">\
+<img loading=lazy src=\"\2.jpg\" alt=\"\1\">\
 <\/picture>/g' tariqhawis.github.io/_posts/2020-02-14-how-to-launch-a-secure-website-in-2020.md
 
 change hero jpg to webp:

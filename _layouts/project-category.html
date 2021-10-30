@@ -21,7 +21,7 @@ show_sidebar: false
         {% if project.image %}
         <div class="card-image">
           <figure class="image is-2by1">
-            <img src="{{ project.image }}" alt="{{ project.title }}" />
+            <img loading=lazy src="{{ project.image }}" alt="{{ project.title }}" />
           </figure>
         </div>
         {% endif %}

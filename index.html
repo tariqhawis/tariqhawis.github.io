@@ -55,7 +55,7 @@ sindex: true
           <div class="columns">
             <div class="column is-4">
               <figure class="image is-2by1">
-                <img
+                <img loading=lazy
                   src="{{ post.image | replace: 'http:', 'https:' }}"
                   alt="{{ post.title }}"
                 />
@@ -102,7 +102,7 @@ sindex: true
             writeups limit:1 %}
             <div class="column is-4">
               <figure class="image is-2by1">
-                <img
+                <img loading=lazy
                   src="{{ item.image | replace: 'http:', 'https:' }}"
                   alt="{{ item.title }}"
                 />
@@ -140,7 +140,7 @@ sindex: true
             projects limit:1 %}
             <div class="column is-4">
               <figure class="image is-2by1">
-                <img
+                <img loading=lazy
                   src="{{ item.image | replace: 'http:', 'https:' }}"
                   alt="{{ item.title }}"
                 />
