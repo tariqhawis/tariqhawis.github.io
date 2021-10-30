@@ -1,43 +1,27 @@
 ---
+title: Tariq Hawis | Security, Open Source, and Technology
 layout: default
-title: Tariq Hawis | Cybersecurity, Linux, Open Source, and IT
-subtitle: |
-  sharing my knowledge & experience with the community.. and YOU!
-permalink: /
-hero_image: /img/landing-hero1.webp
-image: /img/tariqhawis-security-blog.webp
+subtitle: share my knowledge and works with the community!
+permalink: "/"
+hero_image: "/img/landing-hero1.webp"
+image: "/img/tariqhawis-security-blog.webp"
+sindex: true
 ---
 
 <br />
-<div class="columns is-multiline is-mobile is-centered">
-  <div class="column is-2-desktop is-4-tablet is-6-mobile">
-    <img class="is-rounded" src="/img/myp.webp" width="100%" alt="Who am I?" />
-  </div>
+<div class="card columns is-multiline is-mobile is-centered">
 
-  <div class="column is-6-desktop is-6-tablet is-12-mobile content">
-    <h1 class="has-text-centered">Who Am I?</h1>
+  <div class="column is-8-desktop is-6-tablet is-12-mobile content">
     <div class="content is-medium">
-      <br />
-      <p>
-        Hello and welcome! My name is Tariq Hawis and I am an active member in
-        the security and open source community by answering to questions in
-        technical forums and social networks; share fixes to bug tracking sites,
-        and writing HowTo articles in my blog.
-      </p>
-
-      <p>
-        In my full time job I do security events analysis, security systems
-        monitoring, white/black box analysis on web applications, and develop
-        tools to automate my working tasks using python and bash languages. 
-      </p>
-
-      <p>
-        At my own lab, I like testing and benchmarking new and interesting
-        cybersecurity tools to discover their abilities and features, such as
-        SIEM, vulnerability scanning, penetration and forensics tools against
-        virtual targets; and develop my own security and automation tools
-      </p>
-    </div>
+			<p class="has-text-weight-semibold is-size-4">Greetings,
+<p>
+        My name is Tariq Hawis, I am a solutions architect, security leader, and writer. I have experience and passion for cyber defense, hacking, and new technologies in general.
+</p><p>
+        I have contributions to several open source projects and communities whether by pushing code enhancements, reporting security bugs, or providing troubleshoot answeres. Also, I like joining hack and defense contests, security/hack box challenges.
+        </p><p>
+        Throughout my career journey, I helped small and large businesses, non-profit entities and individuals avoid data breaches by investigating, evaluate and enhancing security posture by providing security controls, tools, and awareness.
+ </p>   
+      </div>
     <div class="content is-medium is-light has-text-weight-bold">
       Be sure to sign up below to keep updated with my latest works {% include
       signup.html %}
@@ -55,7 +39,7 @@ image: /img/tariqhawis-security-blog.webp
 
 {% for post in site.posts limit:1 %}
 <section class="section">
-  <div class="columns is-multiline">
+  <div class="card columns is-multiline">
     <div class="column is-12">
       <div class="content">
         <h2 class="has-text-centered">Latest Post</h2>
@@ -100,7 +84,7 @@ image: /img/tariqhawis-security-blog.webp
 </section>
 {% endfor %} {% for writeup in site.writeups limit:1 %}
 <section class="section">
-  <div class="columns is-multiline is-centered">
+  <div class="card columns is-multiline is-centered">
     <div class="column is-12">
       <div class="content">
         <h2 class="has-text-centered">Latest Writeup</h2>
@@ -138,7 +122,7 @@ image: /img/tariqhawis-security-blog.webp
 </section>
 {% endfor %} {% for project in site.projects limit:1 %}
 <section class="section">
-  <div class="columns is-multiline is-centered">
+  <div class="card columns is-multiline is-centered">
     <div class="column is-12">
       <div class="content">
         <h2 class="has-text-centered">Latest Project</h2>

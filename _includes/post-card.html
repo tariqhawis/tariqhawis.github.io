@@ -1,5 +1,5 @@
 <div class="card">
-    {% if post.image %}
+    {% if post.image-disabled %}
     <div class="card-image">
         <figure class="image is-2by1">
         <img src="{{ post.image }}" alt="{{ post.title }}">
@@ -12,7 +12,7 @@
     {% endif %}
     <div class="card-content">
         <div class="content">
-            {% if post.image %}
+            {% if post.image-disabled %}
             <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
             {% endif %}
             {% if post.summary %}

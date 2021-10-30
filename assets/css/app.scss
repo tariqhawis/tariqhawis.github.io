@@ -1,7 +1,7 @@
 ---
 ---
 $primary: #333;
-$secondary: rgb(238, 238, 238);
+$secondary: rgb(255, 255, 255);
 $info: #981430;
 $pagination-current-background-color: $info;
 $pagination-current-border-color: $info;
@@ -32,10 +32,9 @@ div.highlight {
     }
 }
 
-  .footer {
+.footer {
     background-color: $primary;
-    padding: 3rem 1.5rem 6rem;
-
+    padding: 3rem 1.5rem 1rem;
   }
 .footer a {
     color: white;
@@ -43,10 +42,11 @@ div.highlight {
 .footer a:hover {
     color: grey;
 }
-.content {
-    font-size: 20px;
-}
 
 .cryptedmail:after {
     content: attr(data-name) "@" attr(data-domain) "." attr(data-tld); 
   }
+
+.footer p {
+    color: $secondary;
+}

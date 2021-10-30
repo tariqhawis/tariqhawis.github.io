@@ -61,6 +61,7 @@ defaults:
     values:
       hero_darken: true
       author: "Tariq Hawis"
+      show_ads: false
   - scope:
       path: ""
       type: "posts"
