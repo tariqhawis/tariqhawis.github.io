@@ -12,7 +12,7 @@ show_sidebar: false
   {% assign sorted_projects = site.projects | sort:page.sort %}
 
   {% for project in sorted_projects %}
-  <div class="column is-4-desktop is-6-tablet">
+  <div class="column is-6-desktop is-6-tablet is-8-mobile">
 
     <a href="{{ project.url | relative_url }}">
 
@@ -27,8 +27,8 @@ show_sidebar: false
         {% endif %}
         <div class="card-content">
 
-          <p class="title is-4">{{ project.title }}</h2>
-          <p class="subtitle is-4">{{ project.subtitle }}</p>  
+          <p class="title is-5">{{ project.title }}</h2>
+          <p class="subtitle is-6">{{ project.subtitle }}</p>  
           <p class="title is-5 has-text-right">{{ project.price }}</p>
 
         </div>

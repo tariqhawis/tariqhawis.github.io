@@ -8,10 +8,12 @@ image: "/img/tariqhawis-security-blog.webp"
 sindex: true
 ---
 
-<br />
+<section class="section">
 <div class="card columns is-multiline is-mobile is-centered">
 
-  <div class="column is-8-desktop is-6-tablet is-12-mobile content">
+  <div class="column is-12 content">
+    <section class="hero is-light">
+      <div class="hero-body">   
     <div class="content is-medium">
 			<p class="has-text-weight-semibold is-size-4">Greetings,
 <p>
@@ -23,8 +25,8 @@ sindex: true
  </p>   
       </div>
     <div class="content is-medium is-light has-text-weight-bold">
-      Be sure to sign up below to keep updated with my latest works {% include
-      signup.html %}
+      <p>Keep updated with my latest works, HowTo posts, Tips & tricks, and more</p>
+       {% include signup.html %}
     </div>
     <div class="content is-medium">
       <p>
@@ -34,9 +36,11 @@ sindex: true
         >
       </p>
     </div>
+    </div>
+    </section>
   </div>
 </div>
-
+</section>
 {% for post in site.posts limit:1 %}
 <section class="section">
   <div class="card columns is-multiline">
@@ -46,7 +50,7 @@ sindex: true
       </div>
     </div>
     <div class="column is-12">
-      <section class="hero is-dark">
+      <section class="hero is-light">
         <div class="hero-body">
           <div class="columns">
             <div class="column is-4">
@@ -91,7 +95,7 @@ sindex: true
       </div>
     </div>
     <div class="column is-12">
-      <section class="hero is-dark">
+      <section class="hero is-light">
         <div class="hero-body">
           <div class="columns">
             {% assign writeups = site.writeups | reverse %} {% for item in
@@ -129,7 +133,7 @@ sindex: true
       </div>
     </div>
     <div class="column is-12">
-      <section class="hero is-dark">
+      <section class="hero is-light">
         <div class="hero-body">
           <div class="columns">
             {% assign projects = site.projects | reverse %} {% for item in

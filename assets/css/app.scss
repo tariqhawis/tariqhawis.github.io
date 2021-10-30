@@ -2,7 +2,7 @@
 ---
 $primary: #333;
 $secondary: rgb(255, 255, 255);
-$info: #981430;
+$info: #c9c9c9;
 $pagination-current-background-color: $info;
 $pagination-current-border-color: $info;
 $body-background-color: $secondary;
@@ -32,7 +32,10 @@ div.highlight {
     }
 }
 
-.google-auto-placed + p {margin-top: 1.5rem;}
+.google-auto-placed {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+}
 
 .footer {
     background-color: $primary;
