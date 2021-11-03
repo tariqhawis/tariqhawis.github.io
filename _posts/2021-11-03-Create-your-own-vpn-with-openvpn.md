@@ -11,9 +11,9 @@ image: /img/OpenVPN-Protocol-Logo-1536x864.webp
 tags: vpn openvpn TLS_VPN secure_connection free_vpn
 ---
 
-If you are looking to build your own VPN server for personal use or as a business, this setup below will work just fine. All you need is a machine with good badnwidth and speed connection, the machine can be Dedicated, Virtual, or cloud server. 
+If you are looking to build your own VPN server for personal use or as a business, this setup below will work just fine. All you need is a machine with good bandwidth and speed connection, the machine can be a Dedicated, Virtual, or cloud server. 
 
-In the below setup I used CentOS 8 as an operating system, same setps will works on RedHat, CentOS, Fedora of the same version. For Ubuntu and Debian, the repository will be different and there are some minor changes such as the path of the config files, easyrsa, and so on. If you need a separate post for Ubuntu/Debian OpenVPN setup, please leave me a comment below.
+In the below setup I used CentOS 8 as an operating system, the same steps will work on RedHat, CentOS, Fedora of the same version. For Ubuntu and Debian, the repository will be different and there are some minor changes such as the path of the config files, easyrsa, and so on. If you need a separate post for Ubuntu/Debian OpenVPN setup, please leave me a comment below.
 
 # What is OpenVPN?
 
