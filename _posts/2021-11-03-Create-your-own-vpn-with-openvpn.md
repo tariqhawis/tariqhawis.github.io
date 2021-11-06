@@ -63,11 +63,11 @@ cp /usr/share/easy-rsa/3.0.8 /etc/easy-rsa
 Now let's create our PKI as the first important step before moving forward with VPN configuration.
 
 
-# Setup The PKI
+## Setup The PKI
 
 In this stage we are going to initialize the PKI, build CA root, and generate server and client key-pairs so that will be used for the communication between the server and the client. 
 
-## Initialize PKI
+### Initialize PKI
 
 Before that, we need to edit vars file with necessary values that will be used by the init-pki and ca-build scripts.
 
@@ -109,7 +109,7 @@ cd /etc/easyrsa
 You will see a new folder called pki.
 
 
-## Build the CA Root
+### Build the CA Root
 
 In this step we run clean-all parameter to clean any previous CA certificates if any exist, then build the CA root with build-ca paramter. During the build process, you will be asked for the passphrase of your CA private key, please remmember it as you will need it everytime when you generate a key-pair or sign a CSR file.
 
@@ -153,7 +153,7 @@ Your new CA certificate file for publishing is at:
 If you received the same results then everything is alright so far.
 
 
-## Generate The Certificate & Private Key For The Server
+### Generate The Certificate & Private Key For The Server
 
 Next, we will generate a certificate and private key for the server with the below command:
 
@@ -193,7 +193,7 @@ Write out database with 1 new entries
 Data Base Updated
 ```
 
-## Generate Shared Key for Extra protection
+### Generate Shared Key for Extra protection
 
 For extra security beyond that provided by SSL/TLS, we will create an "HMAC firewall". This will help to protect and tight the usage of your resources by blocking attacks like DoS and UDP port flooding.
 
@@ -204,7 +204,7 @@ openvpn --genkey --secret ta.key
 cp ta.key /etc/easyrsa/pki/private/
 ```
 
-## Examine our PKI folder
+### Examine our PKI folder
 
 Let us check all our newly-generated keys and certificate in the pki subdirectory. The tree of pki should look like this:
 
@@ -237,11 +237,11 @@ Here is an explanation of the relevant files:
 | ta.key      | server + all clients     | Shared Secret Key         | YES    | 
 
 
-# Setup OpenVPN Service
+## Setup OpenVPN Service
 
 After we have finished the PKI configuration, let's move on to OpenVPN configuration.
 
-## Create VPN Server conf File
+### Create VPN Server conf File
 
 At this stage, we need first to create the server configuration that will determine all paramters needed by the VPN server, such as the network type to be used "TUN or TAP", listening port, and the network subnet. we can use the sample conf files from the OpenVPN docs folder since they are ideal as starting points for an OpenVPN server configuration. With this sample server configuration, the OpenVPN server will create a VPN using a virtual TUN network interface (for routing), will listen for client connections on UDP port 1194 (OpenVPN's official port number), and distribute virtual addresses to connecting clients from the 10.8.0.0/24 subnet. 
 
@@ -321,11 +321,11 @@ explicit-exit-notify 1
 ```
 
 
-## Firewall & Networking Configuration
+### Firewall & Networking Configuration
 
 This is very imprtant step to allow the clients to use our VPN server and to have internet access. In this section we will use IP Forwarding, a method that used to tell where the IP traffic should be routed, and Firewall rules that define how the clients' traffic should be handled.
 
-### IP Forwarding
+#### IP Forwarding
 
 For this step we need to add in the file `/etc/sysctl.conf` the value `net.ipv4.ip_forward = 1`:
 
@@ -341,7 +341,7 @@ net.ipv4.ip_forward = 1
 ```
 
 
-### Firewall configuration
+#### Firewall configuration
 
 In this section we are going to add out VPN interface "tun0" to our trusted zone, to do that, run the following commands:
 
@@ -401,7 +401,7 @@ firewall-cmd --permanent --direct --passthrough ipv4 -t nat -A POSTROUTING -s 10
 firewall-cmd --reload
 
 
-## Start OpenVPN Service
+### Start OpenVPN Service
 
 Now it's time to start the VPN service. To run OpenVPN at the server as a daemon we will enable the service then start it
 
@@ -470,12 +470,12 @@ ip route
 ```
 
 
-# Setup The VPN Client
+## Setup The VPN Client
 
 In my demo my client is running RHEL 8 so you can repeat the installation step I did for the server. In the next section we are going to discuss two kind of approachs that can be used when creating client's key-pair.
 
 
-## Approach No.1 Generate The Client's Key-Pair At The VPN/CA Server
+### Approach No.1 Generate The Client's Key-Pair At The VPN/CA Server
 
 With this approach the step of generating client's key-pair is identical to the server's. At the VPN/CA server run:
 
@@ -521,7 +521,7 @@ scp pki/private/client1.lab.crt root@192.168.56.110:/etc/openvpn/client/
 Next, proceed with the "Create Client VPN ovpn File" section down below.
 
 
-## Approach No.2 Generate Key & CSR At The Client
+### Approach No.2 Generate Key & CSR At The Client
 
 You may require this approach if you don't want the clients' key to leave his hard drive. This is a better choice from security aspect. 
 
@@ -654,7 +654,7 @@ scp pki/ca.crt root@192.168.56.110:/etc/openvpn/client/
 scp pki/private/ta.key root@192.168.56.110:/etc/openvpn/client/
 ```
 
-## Create Client VPN ovpn File
+### Create Client VPN ovpn File
 
 Back to the client, just like the server, there is a sample configuration file for the client vpn at OpenVPN's docs, let's copy the file:
 
@@ -695,7 +695,7 @@ key-direction 1
 ```
 
 
-## Connect to VPN Server
+### Connect to VPN Server
 
 Finally, let's connect to the VPN server from our client machine, from your home directory run:
 
@@ -739,3 +739,7 @@ If the ping succeeds, congratulations! You now have a functioning VPN.
 
 If you faced any issue or received any error here or there, leave me a comment below.
 
+
+## Conclusion
+
+In this tutorial, we have demonstrated how can we create our own VPN server using the famous opensource project **OpenVPN**, the steps to build it was straightforward, we started with configuring PKI that allow us to create CA root, server, and clients certificates, then we saw how can we configure the VPN server and the client including networking, firewall, and encryption settings. 
