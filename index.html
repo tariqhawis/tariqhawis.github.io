@@ -74,7 +74,7 @@ sindex: true
                 </div>
                 <a
                   href="{{ post.url | prepend: site.baseurl }}"
-                  class="button is-info"
+                  class="button is-danger"
                 >
                   Read more...
                 </a>
@@ -114,7 +114,7 @@ sindex: true
                 <p>{{ item.excerpt }}</p>
               </div>
               <div class="has-text-centered">
-                <a href="{{ item.url }}" class="button is-info">Details</a>
+                <a href="{{ item.url }}" class="button is-danger">Read more...</a>
               </div>
             </div>
             {% endfor %}
@@ -152,7 +152,7 @@ sindex: true
                 <p>{{ item.excerpt }}</p>
               </div>
               <div class="has-text-centered">
-                <a href="{{ item.url }}" class="button is-info">Details</a>
+                <a href="{{ item.url }}" class="button is-danger">Read more...</a>
               </div>
             </div>
             {% endfor %}
