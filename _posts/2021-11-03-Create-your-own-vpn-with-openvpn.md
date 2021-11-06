@@ -1,11 +1,12 @@
 ---
-layout: page
+layout: post
 hero_title: Create Your Own VPN Server with OpenVPN
 description: In this post I will walk you through how to create a free VPN server using OpenVPN community edition
 date: 2021-11-03
 permalink: /:title/
 redirect_from: /2021/11/03/create-your-own-vpn-server-with-openvpn.html
-toc: true
+menubar_toc: true
+toc_title: Custom Title
 hero_image: /img/OpenVPN-Protocol-Logo-1536x864.webp
 #hero_height: is-large
 image: /img/OpenVPN-Protocol-Logo-1536x864.webp
@@ -16,12 +17,12 @@ If you are looking to build your own VPN server for personal use or as a busines
 
 In the below setup I used CentOS 8 as an operating system, the same steps will work on all linux distros except for minor changes in Ubuntu/Debian such as the path of the config files, easyrsa's vars, and so on.
 
-# What is OpenVPN?
+## What is OpenVPN?
 
 OpenVPN is a full-featured SSL VPN that implements OSI layer 2 or 3 secure network extension using the industry-standard SSL/TLS protocol, supports flexible client authentication methods based on certificates, smart cards, and/or username/password credentials, and allows user or group-specific access control policies using firewall rules applied to the VPN virtual interface. And the best part is, it free and open source!
 
 
-# Setup The VPN Server
+## Setup The VPN Server
 
 For this demo, I am going to prepare two virtual machines with RHEL 8 as the operating system, we will use epel repoistory which will install the OpenVPN package community edition. I should mention here that the OpenVPN package is the same for the server and the client, the only difference will be with the configuration file that will be passed to the service, we are going to discuss that later on. 
 
@@ -237,7 +238,7 @@ Here is an explanation of the relevant files:
 | ta.key      | server + all clients     | Shared Secret Key         | YES    | 
 
 
-## Setup OpenVPN Service
+## Setup OpenVPN Server
 
 After we have finished the PKI configuration, let's move on to OpenVPN configuration.
 
@@ -470,12 +471,12 @@ ip route
 ```
 
 
-## Setup The VPN Client
+## Setup OpenVPN Client
 
 In my demo my client is running RHEL 8 so you can repeat the installation step I did for the server. In the next section we are going to discuss two kind of approachs that can be used when creating client's key-pair.
 
 
-### Approach No.1 Generate The Client's Key-Pair At The VPN/CA Server
+### 1st Approach. Generate Keypair at The Server
 
 With this approach the step of generating client's key-pair is identical to the server's. At the VPN/CA server run:
 
@@ -521,7 +522,7 @@ scp pki/private/client1.lab.crt root@192.168.56.110:/etc/openvpn/client/
 Next, proceed with the "Create Client VPN ovpn File" section down below.
 
 
-### Approach No.2 Generate Key & CSR At The Client
+### 2nd Aproach. Generate The Key/CSR at The Client
 
 You may require this approach if you don't want the clients' key to leave his hard drive. This is a better choice from security aspect. 
 
@@ -654,7 +655,7 @@ scp pki/ca.crt root@192.168.56.110:/etc/openvpn/client/
 scp pki/private/ta.key root@192.168.56.110:/etc/openvpn/client/
 ```
 
-### Create Client VPN ovpn File
+### Create Client's ovpn File
 
 Back to the client, just like the server, there is a sample configuration file for the client vpn at OpenVPN's docs, let's copy the file:
 
@@ -695,7 +696,7 @@ key-direction 1
 ```
 
 
-### Connect to VPN Server
+### Connect to OpenVPN Server
 
 Finally, let's connect to the VPN server from our client machine, from your home directory run:
 
