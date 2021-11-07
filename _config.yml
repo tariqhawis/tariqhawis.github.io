@@ -70,7 +70,10 @@ defaults:
       hero_image: /img/blog-hero.webp
       show_sidebar: false
       middle_text: true
-
+  - scope:
+      path: "assets/**/*.css"
+    values:
+      sitemap: false
 # SEO
 author:
   twitter: TariqHawis
