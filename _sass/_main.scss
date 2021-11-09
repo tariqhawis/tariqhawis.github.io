@@ -10,7 +10,8 @@
       url(../fonts/Montserrat_400_normal.woff) format('woff'), /* http://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WlhzQ.woff */
       url(../fonts/Montserrat_400_normal.ttf) format('truetype'), /* http://fonts.gstatic.com/s/montserrat/v18/JTUSjIg1_i6t8kCHKm459WlhziTh89Y.ttf */
       url(../fonts/Montserrat_400_normal.svg#Montserrat_400_normal) format('svg'); /* http://fonts.gstatic.com/l/font?kit=JTUSjIg1_i6t8kCHKm459WlhzA&skey=7bc19f711c0de8f&v=v18#Montserrat */
-}
+      font-display: swap;
+    }
 
 $family-sans-serif: 'Montserrat', sans-serif;
 $primary: #188eac !default;
