@@ -38,11 +38,7 @@
                     {% include gallery.html %}
                     {{ content }}
                 </div>
-                {% if page.show_ads and page.show_sidebar %}
-                <div class="column is-4-desktop is-12-tablet">
-                    {% include side-ad.html %}
-                </div>
-                {% elsif site.posts and page.show_sidebar %}
+                {% if site.posts and page.show_sidebar %}
                 <div class="column is-4-desktop is-12-tablet">
                     {% include latest-posts.html %}
                 </div>
