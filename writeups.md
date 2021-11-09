@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: ctf-category
 title: CTF WriteUps
 subtitle: For HackTheBox and TryHackMe challenges
 order: 3

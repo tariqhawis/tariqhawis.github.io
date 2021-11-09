@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project-category
 title: Projects
 subtitle: Security management, penetration testing, bash scripts, and other automation tools
 order: 2
