@@ -9,7 +9,7 @@ layout: default
 
 <div class="content">
   <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
-
+  {% include side-ad.html %}
   {{ content }}
 </div>
 
