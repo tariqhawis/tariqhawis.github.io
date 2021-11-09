@@ -42,7 +42,7 @@
                 <div class="column is-4-desktop is-12-tablet">
                     {% include latest-posts.html %}
                 </div>
-                {% elsif site.posts and page.show_ads %}
+                {% elsif page.show_ads and page.show_sidebar %}
                 <div class="column is-4-desktop is-12-tablet">
                     {% include side-ad.html %}
                 </div>

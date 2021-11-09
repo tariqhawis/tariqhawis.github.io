@@ -8,4 +8,5 @@ permalink: /blog/index.html
 image: /img/blog-hero.webp
 hero_image: /img/blog-hero.webp
 show_ads: true
+show_sidebar: true
 ---

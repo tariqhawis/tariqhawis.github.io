@@ -8,4 +8,5 @@ hero_image: /img/ctf-hero.webp
 image: /img/tariqhawis-security-blog.webp
 sort: title
 show_ads: true
+show_sidebar: true
 ---
