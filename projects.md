@@ -1,5 +1,5 @@
 ---
-layout: project-category
+layout: default
 title: Projects
 subtitle: Security management, penetration testing, bash scripts, and other automation tools
 order: 2
@@ -10,3 +10,42 @@ sort: title
 show_ads: true
 show_sidebar: true
 ---
+
+
+<div class="columns is-multiline">
+
+  <div class="column is-12">
+    {{ page.content }}
+  </div>
+
+  {% assign sorted_projects = site.projects | sort:page.sort %}
+
+  {% for project in sorted_projects %}
+  <div class="column is-6-desktop is-6-tablet is-8-mobile">
+
+    <a href="{{ project.url | relative_url }}">
+
+      <div class="card">
+
+        {% if project.image %}
+        <div class="card-image">
+          <figure class="image is-2by1">
+            <img loading=lazy src="{{ project.image }}" alt="{{ project.title }}" />
+          </figure>
+        </div>
+        {% endif %}
+        <div class="card-content">
+
+          <p class="title is-5">{{ project.title }}</h2>
+          <p class="subtitle is-6">{{ project.subtitle }}</p>  
+          <p class="title is-5 has-text-right">{{ project.price }}</p>
+
+        </div>
+      </div>
+
+    </a>
+
+  </div>
+{% endfor %}
+</div>
+
