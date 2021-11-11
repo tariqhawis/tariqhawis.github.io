@@ -1,17 +1,19 @@
 ---
 layout: post
 hero_title: Why you Should Avoid WordPress
-description: Find the reasons why WordPress is a security risk for your website.
+description: Wordpress is the most famous CMS platform that is used to build websites for years. However, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has has shown inability to catch up. 
+summary:  |-
+    If you are a WordPress user then you must have needed to install some plugins that are responsible to increase performance, security, and maybe SEO to optimize your SEO rank. 
 date: 2020-02-29
 permalink: /:title/
 redirect_from: /2020/02/29/why-you-should-avoid-wordpress.html
 hero_image: /img/avoid-wordpress-hero.webp
 #hero_height: is-large
 image: /img/avoid-wordpress-600x400.webp
-tags: web security wordpress CMS SSG jekyll
+tags: web security wordpress performance CMS SSG jekyll
 ---
 
-WordPress is a web-based Content Management System -aka CMS- that allow users to create, manage, and modify content on a website, without needing to know anything about code.
+Wordpress is the most famous CMS platform that is used to build websites for years. Yet, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has has shown inability to catch up. 
 
 What makes WordPress the most preferable CMS for the vast majority of website owners is for the considerable community that behind it; WP's empowered by millions of people with plugins & themes of all kind and shapes that available for free to download, and for all tips & tricks that needed for better blogging experience. It's nearly impossible that there's a problem with WP and it has no solution exist on the Internet. Heck, even there are companies who especially dedicated for WP as you'll find who offer premium plugins, themes, or manage services.
 

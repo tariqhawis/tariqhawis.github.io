@@ -2,6 +2,8 @@
 layout: post
 hero_title: Create Your Own VPN Server with OpenVPN
 description: In this post I will walk you through how to create a free VPN server using OpenVPN community edition
+summary:  |-
+    If you are looking to build your own VPN server for personal use or for your business, this post will walk you through it. 
 date: 2021-11-03
 permalink: /:title/
 redirect_from: /2021/11/03/create-your-own-vpn-server-with-openvpn.html
@@ -13,7 +15,7 @@ image: /img/OpenVPN-Protocol-Logo-1536x864.webp
 tags: vpn openvpn TLS_VPN secure_connection free_vpn
 ---
 
-If you are looking to build your own VPN server for personal use or as a business, this setup below will work just fine. All you need is a machine with good bandwidth and speed connection, the machine can be a Dedicated, Virtual, or cloud server. 
+If you are looking to build your own VPN server for personal use or for your business, this post will walk you through it. All you need is a machine with good bandwidth and speed connection, the machine can be a Dedicated, Virtual, or cloud server. 
 
 In the below setup I used CentOS 8 as an operating system, the same steps will work on all linux distros except for minor changes in Ubuntu/Debian such as the path of the config files, easyrsa's vars, and so on.
 

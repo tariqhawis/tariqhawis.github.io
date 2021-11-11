@@ -1,6 +1,8 @@
 ---
 title: Introducing InjectBot v1.0
 subtitle: First Ever GUI SQL Injection Tool
+summary:  |-
+    Introducing InjectBot, the web-based penetration testing tool developed to be used by web developers, penetration testers and security analysis teams to check web applications against SQL injection vulnerability.
 layout: project
 image: /img/injectbot/injectbot-logo.webp
 seo:

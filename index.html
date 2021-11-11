@@ -70,7 +70,7 @@ sindex: true
                   Published: {{ post.date | date: "%b %-d, %Y" }}
                 </p>
                 <div class="content">
-                  <p>{{ post.excerpt }}</p>
+                  <p>{{ post.summary }}</p>
                 </div>
                 <a
                   href="{{ post.url | prepend: site.baseurl }}"
@@ -111,7 +111,7 @@ sindex: true
             <div class="column is-8 has-text-centered">
               <p class="title is-4">{{ item.title }}</p>
               <div class="content has-text-centered">
-                <p>{{ item.excerpt }}</p>
+                <p>{{ item.summary }}</p>
               </div>
               <div class="has-text-centered">
                 <a href="{{ item.url }}" class="button is-danger">Read more...</a>
@@ -149,7 +149,7 @@ sindex: true
             <div class="column is-8 has-text-centered">
               <p class="title is-4">{{ item.title }}</p>
               <div class="content has-text-centered">
-                <p>{{ item.excerpt }}</p>
+                <p>{{ item.summary }}</p>
               </div>
               <div class="has-text-centered">
                 <a href="{{ item.url }}" class="button is-danger">Read more...</a>

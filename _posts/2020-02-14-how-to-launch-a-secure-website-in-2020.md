@@ -2,6 +2,8 @@
 layout: post
 hero_title: How to Launch a Secure Website in 2020
 description: Learn about static site generators for a modern fast and secure website.
+summary:  |-
+    Static Sites Generators have considered the future for the websites on www. This is because they are simply solved many issues with traditional CMS platforms specially when it comes to the performance and security.
 date: 2020-02-14
 permalink: /:title/
 redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020.html
