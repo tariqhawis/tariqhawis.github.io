@@ -59,7 +59,7 @@
     
     
     <url>
-      <loc>https://www.tariqhawis.com/projects/injectbot-the-easiest-and-fastest-SQLi-pentest-tool</loc>
+      <loc>https://www.tariqhawis.com/projects/injectbot-sql-injection-tool/</loc>
       
         <lastmod>2021-11-03T22:16:15+00:00</lastmod>
       
@@ -67,7 +67,7 @@
         <changefreq>monthly</changefreq>
       
       
-        <priority>0.6</priority>
+        <priority>0.7</priority>
       
     </url>
     
@@ -81,7 +81,7 @@
         <changefreq>monthly</changefreq>
       
       
-        <priority>0.1</priority>
+        <priority>0.5</priority>
       
     </url>
     

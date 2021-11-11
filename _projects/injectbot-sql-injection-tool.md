@@ -1,8 +1,8 @@
 ---
 title: Introducing InjectBot v1.0
-subtitle: First Ever GUI SQL Injection Tool
+subtitle: The Easiest and Fastest SQL Injection Tool
 summary:  |-
-    Introducing InjectBot, the web-based penetration testing tool developed to be used by web developers, penetration testers and security analysis teams to check web applications against SQL injection vulnerability.
+    Many penetration testers prefer to use GUI rather than CLI tools specially for professinals who have several security systems to deal. Injectbot has borken this barrier with a friendly web-based sql injection tool.
 layout: project
 image: /img/injectbot/injectbot-logo.webp
 seo:
@@ -20,6 +20,7 @@ features:
   - label: Switch between classic and blind SQLi in options above.
     icon: fa-fighter-jet
 rating: 5
+permalink: /:title/
 redirect_from:
   - /projects/injectbot-the-easiest-and-fastest-SQLi-pentest-tool
 ---
