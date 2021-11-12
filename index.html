@@ -31,8 +31,7 @@ sindex: true
     <div class="content is-medium">
       <p>
         Contact me privately:
-        <a href="https://keybase.io/tariqhawis/key.asc" target="_blank"
-          >PGP public key</a
+        <a href="https://keybase.io/tariqhawis/key.asc" target="_blank" rel="noreferrer">PGP public key</a
         >
       </p>
     </div>
@@ -54,7 +53,7 @@ sindex: true
         <div class="hero-body">
           <div class="columns">
             <div class="column is-4">
-              <figure class="image is-2by1">
+              <figure class="image">
                 <img loading=lazy
                   src="{{ post.image | replace: 'http:', 'https:' }}"
                   alt="{{ post.title }}"
@@ -101,7 +100,7 @@ sindex: true
             {% assign writeups = site.writeups | reverse %} {% for item in
             writeups limit:1 %}
             <div class="column is-4">
-              <figure class="image is-2by1">
+              <figure class="image">
                 <img loading=lazy
                   src="{{ item.image | replace: 'http:', 'https:' }}"
                   alt="{{ item.title }}"
@@ -139,7 +138,7 @@ sindex: true
             {% assign projects = site.projects | reverse %} {% for item in
             projects limit:1 %}
             <div class="column is-4">
-              <figure class="image is-2by1">
+              <figure class="image ">
                 <img loading=lazy
                   src="{{ item.image | replace: 'http:', 'https:' }}"
                   alt="{{ item.title }}"
