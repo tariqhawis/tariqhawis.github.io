@@ -9,7 +9,7 @@ permalink: /:title/
 redirect_from: /ctf/htb-under-construction-web-challange/
 hero_image: /img/Hack-The-Box-logo.webp
 #hero_height: is-large
-image: /img/Hack-The-Box-logo.webp
+image: /img/HackTheBox-500x212.webp
 tags: HackTheBox HTB CTF jwt node.js sqli burp
 ---
 
