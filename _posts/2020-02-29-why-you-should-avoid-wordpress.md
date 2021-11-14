@@ -1,7 +1,7 @@
 ---
 layout: post
 hero_title: Why you Should Avoid WordPress
-description: Wordpress is the most famous CMS platform that is used to build websites for years. However, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has has shown inability to catch up. 
+description: Wordpress is the most famous CMS platform that is used to build websites for years. However, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has shown inability to catch up. 
 summary:  |-
     If you are a WordPress user then you must have needed to install some plugins that are responsible to increase performance, security, and maybe SEO to optimize your SEO rank. 
 date: 2020-02-29
