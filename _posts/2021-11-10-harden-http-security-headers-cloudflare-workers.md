@@ -10,7 +10,7 @@ permalink: /:title/
 redirect_from: /2021/11/10/harden-http-security-headers-cloudflare-workers.html
 hero_image: /img/security-header.webp
 #hero_height: is-large
-image: /img/security-headers-400x200.webp
+image: /img/security-headers-400x200.png
 tags: hardening HTTP security headers webserver Cloudflare Worker Strict-Transport-Security Content-Security-Policy Permissions-Policy Referrer-Policy X-Content-Type-Options X-Frame-Options
 ---
 

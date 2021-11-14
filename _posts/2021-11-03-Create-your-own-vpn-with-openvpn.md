@@ -11,7 +11,7 @@ menubar_toc: true
 toc_title: Custom Title
 hero_image: /img/OpenVPN-Protocol-Logo-1536x864.webp
 #hero_height: is-large
-image: /img/OpenVPN-500x200.webp
+image: /img/OpenVPN-500x200.png
 tags: vpn openvpn TLS_VPN secure_connection free_vpn
 ---
 
