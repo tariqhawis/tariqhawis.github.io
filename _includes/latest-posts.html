@@ -1,0 +1,17 @@
+<p class="title is-4">Latest Posts</p>
+
+<div class="columns is-multiline">
+    {% for post in site.posts limit:3 %}
+    <div class="column is-12">
+        {% if include.simple_card %}
+        <header class="card-header">
+            <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}"
+              >{{ post.title}}</a
+            >
+        </header>
+        {% else %}
+        {% include post-card.html %}
+        {% endif %}
+    </div>
+    {% endfor %}
+</div>

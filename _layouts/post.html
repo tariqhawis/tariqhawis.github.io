@@ -7,8 +7,11 @@ layout: default
     {% include toc.html html=content class='menu-list' h_min=2 h_max=3 contents_title=contentsTitle %}
 {% endif %}
 
-<div class="content">
-   {% include inline-ad.html %}
+
+<div class="content is-size-5">
+  {% if page.hide_hero %}
+  <h1 class="title is-2">{{ page.title }}</h1>
+  {% endif %}
   <p>Published: {{ page.date | date: "%b %-d, %Y" }} by {{ page.author }}</p>
   {{ content }}
 </div>
