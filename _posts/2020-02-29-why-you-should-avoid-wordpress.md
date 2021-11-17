@@ -11,6 +11,7 @@ hero_image: /img/avoid-wordpress-hero.webp
 #hero_height: is-large
 image: /img/avoid-wordpress-600x400.webp
 tags: web security wordpress performance CMS SSG jekyll
+category: Security
 ---
 
 Wordpress is the most famous CMS platform that is used to build websites for years. Yet, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has has shown inability to catch up. 

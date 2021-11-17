@@ -1,8 +1,10 @@
 - name: Projects
   link: /projects/
-- name: Blog
-  link: /blog/
-- name: CTF
-  link: /ctf/
+- name: Linux
+  link: /linux/
+- name: Security
+  link: /security/
+- name: Hacking
+  link: /hacking/
 - name: Contact Me
   link: /contact-me/

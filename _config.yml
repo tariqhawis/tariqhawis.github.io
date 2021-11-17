@@ -47,7 +47,11 @@ collections:
     output: true
     layout: project
     show_sidebar: false
-  writeups:
+  websecurity:
+    output: true
+    layout: post
+    show_sidebar: false
+  hacking:
     output: true
     layout: post
     show_sidebar: false
@@ -71,7 +75,6 @@ defaults:
     values:
       hero_darken: true
       author: "Tariq Hawis"
-      show_ads: false
   - scope:
       path: ""
       type: "posts"

@@ -11,10 +11,10 @@ hero_image: /img/OpenVPN-Protocol-Logo-1536x864.webp
 #hero_height: is-large
 image: /img/OpenVPN-500x200.png
 tags: vpn openvpn TLS_VPN secure_connection free_vpn
-show_ads: true
 show_sidebar: true
 toc: true
 toc_title: Index
+category: Linux
 ---
 
 If you are looking to build your own VPN server for personal use or for your business, this post will walk you through it. All you need is a machine with good bandwidth and speed connection, the machine can be a Dedicated, Virtual, or cloud server. 

@@ -1,7 +1,8 @@
-<p class="title is-4">Latest Posts</p>
+{% assign cat_name = page.category %}
+<p class="title is-4">Latest Posts in {{cat_name}}</p>
 
 <div class="columns is-multiline">
-    {% for post in site.posts limit:3 %}
+    {% for post in site.categories[cat_name] limit:3 %}
     <div class="column is-12">
         {% if include.simple_card %}
         <header class="card-header">

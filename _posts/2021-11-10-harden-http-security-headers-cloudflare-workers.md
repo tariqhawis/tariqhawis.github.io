@@ -9,11 +9,11 @@ date: 2021-11-10
 permalink: /:title/
 redirect_from: /2021/11/10/harden-http-security-headers-cloudflare-workers.html
 hero_image: /img/security-header.webp
-show_ads: true
 show_sidebar: true
 #hero_height: is-large
 image: /img/security-headers-400x200.png
 tags: hardening HTTP security headers webserver Cloudflare Worker Strict-Transport-Security Content-Security-Policy Permissions-Policy Referrer-Policy X-Content-Type-Options X-Frame-Options
+category: Security
 ---
 
 HTTP Security Headers have increasingly been adopted by websites owners of all kinds. Especially after [the tough last few years of websites breaches](https://en.wikipedia.org/wiki/List_of_data_breaches) that hit small and large businesses.

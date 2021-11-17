@@ -11,6 +11,7 @@ hero_image: /img/Hack-The-Box-logo.webp
 #hero_height: is-large
 image: /img/HackTheBox-500x212.webp
 tags: HackTheBox HTB CTF jwt node.js sqli burp
+category: Hacking
 ---
 
 HackTheBox is one of the greatest places to sharpen your skills when it comes to practicing real-life penetration testing.
