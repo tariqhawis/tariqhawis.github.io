@@ -5,7 +5,7 @@ title: Man in The Middle Attack with Real Life Example
 description: Highlight the Man in The Middle Attack and show how to do it on Minecraft PI Server using Kali Linux and Ettercap tool
 summary:  |-
        Man in The Middle Attack is one of the most dangerous attacks, you will learn what is it, the known techniques, and implementing the attack on a real Minecraft PI Server using Kali Linux and Ettercap toolt 
-date: 2021-11-18
+date: 2021-11-23
 permalink: /:title/
 hero_image: /img/mitm-hero.webp
 #hero_height: is-large
