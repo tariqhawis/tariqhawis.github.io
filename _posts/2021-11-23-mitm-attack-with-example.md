@@ -60,7 +60,7 @@ To make the scenario close to the real world, I made two VMs for the client wher
 | Machine No. | Type | OS | IP Address |
 |-----------|--------|--------|----------|
 | 1        | The Server | MacOS | 192.168.56.1 |
-| 2        | The Client | CentOS | 192.168.56.103 |
+| 2        | The Client | CentOS | 192.168.56.110 |
 | 3        | The Attacker | KaliOS | 192.168.56.105 |
 
 
@@ -128,8 +128,6 @@ In the first window, select the network card that shares the network subnet with
 Once clicked on accept, in the next screen, the ettercap will enter the *sniffing mode*. Our first step is to scan for the running hosts that are active in the current subnet by clicking on the icon ![](/img/posts/ettercap-scan_hosts.webp). After finished scanning, click on the icon ![](/img/posts/ettercap-list_hosts.webp) to list detected hosts near you. 
 
 Next, select the targeted hosts by clicking on the victim's IP and then click on *Add to Target 1*, do the same with the server's IP but instead click on *Add to Target 2*. Now the tool will focus on the MiTM attack between the selected targets.
-
-![](/img/posts/ettercap-hosts_list.webp)
 
 
 ### MiTM Phase 1: Disclouse the Server/Client Conversation 
@@ -199,7 +197,9 @@ etterfilter 0.8.3.1 copyright 2001-2020 Ettercap Development Team
  -> Script encoded into 9 instructions.
 ```
 
-Now load the filter to the tool by click on ![Ettercap Menu](/img/posts/ettercap-menu.webp) icon, choose ![Ettercap Select Filters](/img/posts/ettercap-load_filter.webp), then ![Ettercap Load a Filter](/img/posts/ettercap-load_filter2.webp). Select from file browser `fil.ef` that you've just compiled then click on `ok`. To confirm the filter has been loaded see the logs at the bottom of the windows:
+Now load the filter to the tool by click on ![Ettercap Menu](/img/posts/ettercap-menu.webp) icon, choose ![Ettercap Select Filters](/img/posts/ettercap-load_filter.webp), then ![Ettercap Load a Filter](/img/posts/ettercap-load_filter2.webp). 
+
+In the file browser windows, select `fil.ef` that you've just compiled then click on `ok`. To confirm the filter has been loaded see the logs at the bottom of the windows:
 
 ```bash
 Content filters loaded from /home/trx/fil.ef...
@@ -207,7 +207,7 @@ Content filters loaded from /home/trx/fil.ef...
 
 Now your attack setup is done and what you need to do is waiting for your victim to make his move!
 
-Since you also acting as the victim, go back to the client machine and re-run the hello script again. Now open the chat windows at the server to see what you have received. If your setup is correct you should see this:
+Since you are also acting as the victim, go back to the client machine and re-run the hello script again. Now open the chat windows at the server to see what you have received. If your setup is correct you should see this:
 
 ![ettercap manipulate message](/img/posts/ettercap-manipulate_message.webp)
 
