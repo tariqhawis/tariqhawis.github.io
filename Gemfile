@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem "bulma-clean-theme"
-gem "github-pages", ">= 207", group: :jekyll_plugins
+gem "github-pages", ">= 222", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
@@ -9,4 +9,4 @@ group :jekyll_plugins do
 end
 gem 'jekyll-redirect-from'
 gem 'webrick'
-gem "nokogiri"
+gem "nokogiri", ">= 1.12.5"
