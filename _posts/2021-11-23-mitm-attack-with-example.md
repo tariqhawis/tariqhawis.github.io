@@ -187,7 +187,7 @@ The fourth message will output to the ettercap console the confirmation that the
 Save this in a file like `fil.ecf` then compile it so ettercap can execute it on the network, using this command:
 
 ```bash
-etterfilter fil.ecf -o fil.ef
+etterfilter fil.ecf -o fil.cf
 ```
 
 You should get an output similar to this meaning that the compile is done successfully:
@@ -217,10 +217,10 @@ etterfilter 0.8.3.1 copyright 2001-2020 Ettercap Development Team
 
 Now load the filter to the tool by click on ![Ettercap Menu](/img/posts/ettercap-menu.webp) icon, choose ![Ettercap Select Filters](/img/posts/ettercap-load_filter.webp), then ![Ettercap Load a Filter](/img/posts/ettercap-load_filter2.webp). 
 
-In the file browser windows, select `fil.ef` that you've just compiled then click on `ok`. To confirm the filter has been loaded see the logs at the bottom of the windows:
+In the file browser windows, select `fil.cf` that you've just compiled then click on `ok`. To confirm the filter has been loaded see the logs at the bottom of the windows:
 
 ```bash
-Content filters loaded from /home/trx/fil.ef...
+Content filters loaded from /home/trx/fil.cf...
 ```
 
 Now your attack setup is done and what you need to do is waiting for your victim to make his move!
