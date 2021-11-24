@@ -123,14 +123,19 @@ In the first window, select the network card that shares the network subnet with
 
 ![Ettercap Select Network](/img/posts/ettercap-select_net.webp)
 
-> to check and confirm your correct network, run from the terminal `ip addr show`
+> to check and confirm your correct network, run from the terminal:
+> `ip addr show`
 
-Once clicked on accept, in the next screen, the ettercap will enter the *sniffing mode*. Our first step is to scan for the running hosts that are active in the current subnet by clicking on the icon ![](/img/posts/ettercap-scan_hosts.webp). After finished scanning, click on the icon ![](/img/posts/ettercap-list_hosts.webp) to list detected hosts near you. 
+Once clicked on accept, in the next screen, the ettercap will enter the *sniffing mode*. 
+
+First thing we need to to do is to scan for the running hosts that are active in the current subnet by clicking on the icon ![](/img/posts/ettercap-scan_hosts.webp). After finished scanning, click on the icon ![](/img/posts/ettercap-list_hosts.webp) to list detected hosts near you. 
+
+![Ettercap Hosts List](/img/posts/ettercap-hosts_list.webp)
 
 Next, select the targeted hosts by clicking on the victim's IP and then click on *Add to Target 1*, do the same with the server's IP but instead click on *Add to Target 2*. Now the tool will focus on the MiTM attack between the selected targets.
 
 
-### MiTM Phase 1: Disclouse the Server/Client Conversation 
+### MiTM Phase 1: Expose the Server/Client Conversation 
 
 After finishing the scanning phase, let's go ahead and start the first phase of the attack which reveals the conversation between the targeted parties. 
 
@@ -139,13 +144,13 @@ We are going to run `ARP Poisoning` attack by click on ![](/img/posts/ettercap-m
 Now your machine is in line between the server and the client. That is, you can see everything being sent between the server and the client. Confirm that by opening wireshark or tcpdump. For example, open the terminal and run this command:
 
 ```bash
-tcpdump -A -i eth1 port 4711 and host 192.168.56.103
+tcpdump -A -i eth1 port 4711 and host 192.168.56.110
 ```
 
 Now go to the client machine and re-run the python script to send the hello message again, then return to the attacker and you will see something like this:
 
 ```bash
-04:05:09.845686 IP 192.168.56.110.39210 > 192.168.56.103.4711: Flags [P.], seq 1:28, ack 1, win 229, options [nop,nop,TS val 1057102917 ecr 39383616], length 27
+04:05:09.845686 IP 192.168.56.110.39210 > 192.168.56.1.4711: Flags [P.], seq 1:28, ack 1, win 229, options [nop,nop,TS val 1057102917 ecr 39383616], length 27
 E..O.@@.@..B..8n..8g.*.g@.C._@.............
 ?..E.X.@chat.post(Hello Minecraft Server)
 ```
@@ -158,11 +163,21 @@ This is the phase of the attack when we are going to the extreme. After disclosi
 
 ```bash
 if (ip.proto == TCP && tcp.dst == 4711 && search(DATA.data, "Hello Minecraft Server") ) {
-   log(DATA.data, "/tmp/mispelled_ettercap.log");
-   replace("Hello Minecraft Server", "Message Hacked!");
+   log(DATA.data, "/tmp/ettercap.log");
+   replace("Hello Minecraft Server", "This Message is Hacked");
    msg("Altered Client Message\n");
 } 
 ```
+
+Let's explain this script..
+
+At the first line, we have the `if` clause where we ask ettercap to look for TCP traffic `ip.proto == TCP`, the port is being connected to is 4711 `tcp.dst == 4711`, and when the data stream being sent from one target to another contains that hello message `search(DATA.data, "Hello Minecraft Server")`
+
+The second line just for logging on `/tmp/ettercap.log`
+
+At the third line, we make the manipulation action which is this case replacing the original hello message to ours using `replace()` function.
+
+The fourth message will output to the ettercap console the confirmation that the message is altered.
 
 > Note that the replacment message and the one to be replaced have both the same characters count.
 
