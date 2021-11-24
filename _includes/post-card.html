@@ -1,31 +1,17 @@
-<div class="card">
-    {% if post.image-disabled %}
-    <div class="card-image">
-        <figure class="image is-2by1">
-        <img loading=lazy src="{{ post.image }}" alt="{{ post.title }}">
-    </figure>
-    </div>
-    {% else %}
-    <header class="card-header is-size-5">
-        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-    </header>
-    {% endif %}
-    <div class="card-content">
-        <div class="content is-size">
-            {% if post.image-disabled %}
-            <a class="title is-4" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
-            {% endif %}
-            {% if post.summary %}
-                {{ post.summary | markdownify }}
-            {% else %}
-                <p>{{ post.excerpt }}</p>
-            {% endif %}
-        </div>
-        <div class="has-text-centered">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="button is-primary">Read more</a>
-        </div>
-    </div>
-    <footer class="card-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
-    </footer>
-</div>
+{% assign cat_name = include.cat %}
+            <div class="card">
+      
+              {% if cat_name.image %}
+              <div class="card-image">
+                <figure class="image">
+                  <img loading=lazy src="{{ cat_name.image }}" alt="{{ cat_name.title }}" />
+                </figure>
+              </div>
+              {% endif %}
+              <div class="card-content">
+      
+                <p class="title is-5 is-centered">{{ cat_name.hero_title }}</h2>
+                    <p class="subtitle is-6 is-centered">{{ cat_name.description }}</h2>
+              </div>
+            </div>
+  

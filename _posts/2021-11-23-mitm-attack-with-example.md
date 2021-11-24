@@ -2,7 +2,7 @@
 layout: post
 hero_title: Man in The Middle Attack with Real Life Example
 title: Man in The Middle Attack with Real Life Example
-description: Highlight the Man in The Middle Attack and show how to do it on Minecraft PI Server using Kali Linux and Ettercap tool
+description: What is Man-in-The-Middle Attack? How it's implemented? And how to prevent it.
 summary:  |-
        Man in The Middle Attack is one of the most dangerous attacks, you will learn what is it, the known techniques, and implementing the attack on a real Minecraft PI Server using Kali Linux and Ettercap tool
 date: 2021-11-23
@@ -11,10 +11,13 @@ hero_image: /img/mitm-hero.webp
 #hero_height: is-large
 image: /img/mitm200x180.jpg
 tags: man-in-the-middle mitm mitm_attack man-in-the-middle_prevention mitm_toturial arp_poisoning ettercap
+show_sidebar: true
+toc: true
+toc_title: Index
 category: Hacking
 ---
 
-If you are using Whatsapp or Telegram, you may notice a security feature called *end-to-end encryption* which according to the company provider this feature *to ensure only you and the person you're communicating with can read or listen to what is sent, and nobody in between, not even WhatsApp*
+If you are using Whatsapp or Telegram, you may have noticed a message from the chat says that this message is *end-to-end encryption*. This message is basically telling you that *only you and the person you're communicating with can read or listen to what is sent, and nobody in between, not even WhatsApp or telegram*
 
 This is actually one of the countermeasure examples of Man-in-The-Middle Attack.
 

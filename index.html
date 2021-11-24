@@ -19,7 +19,7 @@ sindex: true
 <p>
         My name is Tariq Hawis, I am a solutions architect, security leader, and writer. I have experience and passion for cyber defense, hacking, and new technologies in general.
 </p><p>
-        I have contributions to several open source projects and communities whether by pushing code enhancements, reporting security bugs, or providing troubleshoot answeres. Also, I like joining hack and defense contests, security/hack box challenges.
+        I have contributions to several open source hackings and communities whether by pushing code enhancements, reporting security bugs, or providing troubleshoot answeres. Also, I like joining hack and defense contests, security/hack box challenges.
         </p><p>
         Throughout my career journey, I helped small and large businesses, non-profit entities and individuals avoid data breaches by investigating, evaluate and enhancing security posture with security controls, tools, and awareness.
  </p>   
@@ -40,125 +40,69 @@ sindex: true
   </div>
 </div>
 </section>
-{% for post in site.posts limit:1 %}
 <section class="section">
   <div class="card columns is-multiline">
     <div class="column is-12">
       <div class="content">
-        <h2 class="has-text-centered">Latest Post</h2>
+        <h2 class="has-text-centered">~# Latest in Hacking</h2>
       </div>
     </div>
-    <div class="column is-12">
-      <section class="hero is-light">
-        <div class="hero-body">
-          <div class="columns">
-            <div class="column is-4">
-              <figure class="image is-2by4">
-                <img loading=lazy
-                  src="{{ post.image | replace: 'http:', 'https:' }}"
-                  alt="{{ post.title }}"
-                />
-              </figure>
-            </div>
-            <div class="column is-8">
-              <div class="has-text-centered">
-                <a href="{{ post.url | prepend: site.baseurl }}">
-                  <h3 class="title is-4">{{ post.title }}</h3>
-                </a>
-                <p class="subtitle is-6">
-                  Published: {{ post.date | date: "%b %-d, %Y" }}
-                </p>
-                <div class="content">
-                  <p>{{ post.summary }}</p>
-                </div>
-                <a
-                  href="{{ post.url | prepend: site.baseurl }}"
-                  class="button is-danger"
-                >
-                  Read more...
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+
+    {% for hacking in site.categories["Hacking"] limit:2 %}
+    <div class="column is-half">
+  
+      <a href="{{ hacking.url | relative_url }}">
+  
+       {% include post-card.html cat=hacking %}
+  
+      </a>
+  
     </div>
+  {% endfor %}
   </div>
 </section>
-{% endfor %} {% for writeup in site.writeups limit:1 %}
 <section class="section">
-  <div class="card columns is-multiline is-centered">
+  <div class="card columns is-multiline">
     <div class="column is-12">
       <div class="content">
-        <h2 class="has-text-centered">Latest Writeup</h2>
+        <h2 class="has-text-centered">~# Latest in Security</h2>
       </div>
     </div>
-    <div class="column is-12">
-      <section class="hero is-light">
-        <div class="hero-body">
-          <div class="columns">
-            {% assign writeups = site.writeups | reverse %} {% for item in
-            writeups limit:1 %}
-            <div class="column is-4">
-              <figure class="image is-2by4">
-                <img loading=lazy
-                  src="{{ item.image | replace: 'http:', 'https:' }}"
-                  alt="{{ item.title }}"
-                />
-              </figure>
-            </div>
-            <div class="column is-8 has-text-centered">
-              <p class="title is-4">{{ item.title }}</p>
-              <div class="content has-text-centered">
-                <p>{{ item.summary }}</p>
-              </div>
-              <div class="has-text-centered">
-                <a href="{{ item.url }}" class="button is-danger">Read more...</a>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </section>
-    </div>
+
+      {% for security in site.categories["Security"] limit:2 %}
+      <div class="column is-half">
+    
+        <a href="{{ security.url | relative_url }}">
+    
+         {% include post-card.html cat=security %}
+    
+        </a>
+    
+      </div>
+    {% endfor %}
   </div>
 </section>
-{% endfor %} {% for project in site.projects limit:1 %}
+
 <section class="section">
-  <div class="card columns is-multiline is-centered">
+  <div class="card columns is-multiline">
     <div class="column is-12">
       <div class="content">
-        <h2 class="has-text-centered">Latest Project</h2>
+        <h2 class="has-text-centered">~# Latest in Linux</h2>
       </div>
     </div>
-    <div class="column is-12">
-      <section class="hero is-light">
-        <div class="hero-body">
-          <div class="columns">
-            {% assign projects = site.projects | reverse %} {% for item in
-            projects limit:1 %}
-            <div class="column is-4">
-              <figure class="image is-2by4">
-                <img loading=lazy
-                  src="{{ item.image | replace: 'http:', 'https:' }}"
-                  alt="{{ item.title }}"
-                />
-              </figure>
-            </div>
-            <div class="column is-8 has-text-centered">
-              <p class="title is-4">{{ item.title }}</p>
-              <div class="content has-text-centered">
-                <p>{{ item.summary }}</p>
-              </div>
-              <div class="has-text-centered">
-                <a href="{{ item.url }}" class="button is-danger">Read more...</a>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </section>
+
+    {% for Linux in site.categories["Linux"] limit:2 %}
+    <div class="column is-half">
+  
+      <a href="{{ Linux.url | relative_url }}">
+  
+       {% include post-card.html cat=Linux %}
+  
+      </a>
+  
     </div>
+  {% endfor %}
   </div>
 </section>
-{% endfor %}
+
+

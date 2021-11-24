@@ -1,7 +1,7 @@
 ---
 layout: post
 hero_title: Create Your Own VPN Server with OpenVPN
-description: In this post I will walk you through how to create a free VPN server using OpenVPN community edition
+description: Learn how to create a free VPN server using OpenVPN community edition
 summary:  |-
     If you are looking to build your own VPN server for personal use or for your business, this post will walk you through it. 
 date: 2021-11-03

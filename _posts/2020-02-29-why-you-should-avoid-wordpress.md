@@ -1,7 +1,7 @@
 ---
 layout: post
 hero_title: Why you Should Avoid WordPress
-description: Wordpress is the most famous CMS platform that is used to build websites for years. However, after the new w3 standards, Google SEO, and the emerge of cyber threats. This platform has shown inability to catch up. 
+description: Here is the dark side of Wordpress and why you should avoid using it.
 summary:  |-
     If you are a WordPress user then you must have needed to install some plugins that are responsible to increase performance, security, and maybe SEO to optimize your SEO rank. 
 date: 2020-02-29
@@ -9,7 +9,7 @@ permalink: /:title/
 redirect_from: /2020/02/29/why-you-should-avoid-wordpress.html
 hero_image: /img/avoid-wordpress-hero.webp
 #hero_height: is-large
-image: /img/avoid-wordpress-600x400.webp
+image: /img/wordpress400x200.jpg
 tags: web security wordpress performance CMS SSG jekyll
 category: Security
 ---
@@ -70,6 +70,6 @@ While in dynamic-sites fashion, website pages are delivered on-demand to the vis
 
 ![Static Sites vs Dynamic Sites](/img/posts/dynamic-x-static.webp)
 
-If you want to know more about SSGs and how to build one, check out my other post [How to Launch a Secure Website in 2020]({% post_url 2020-02-14-how-to-launch-a-secure-website-in-2020 %})
+If you want to know more about SSGs and how to build one, check out my other post [How to Launch a Secure Website in 2020]({% post_url 2020-02-14-build-secure-website-2020 %})
 
 Should you have questions or suggestions about this topic, please reach out on [Twitter](https://www.twitter.com/tariqhawis), or leave me a comment below.

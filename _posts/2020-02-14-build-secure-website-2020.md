@@ -7,9 +7,10 @@ summary:  |-
 date: 2020-02-14
 permalink: /:title/
 redirect_from: /2020/02/14/how-to-launch-a-secure-website-in-2020.html
+redirect_from: /how-to-launch-a-secure-website-in-2020/
 hero_image: /img/secure-website-hero.webp
 #hero_height: is-large
-image: /img/secure-website-600x400.webp
+image: /img/secure400x200.jpg
 tags: static site generators jekyll github pages secure website
 category: Security
 ---

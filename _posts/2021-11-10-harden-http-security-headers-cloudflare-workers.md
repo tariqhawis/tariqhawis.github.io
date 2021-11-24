@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Harden HTTP Security Headers Easily: Using CloudFlare Workers"
-hero_title: "Harden HTTP Security Headers Easily: Using CloudFlare Workers"
-description: With this new approach you can harden your website's HTTP Security Headers without the need to change your Web Server Configuration, by using Cloudflare Workers
+hero_title: Harden HTTP Security Headers Easily
+description: This is how you can implement all security headers without modifying your web server
 summary:  |-
     With this new approach you can harden your website's HTTP Security Headers without the need to change your Web Server Configuration, by using Cloudflare Workers
 date: 2021-11-10
@@ -11,8 +10,10 @@ redirect_from: /2021/11/10/harden-http-security-headers-cloudflare-workers.html
 hero_image: /img/security-header.webp
 show_sidebar: true
 #hero_height: is-large
-image: /img/security-headers-400x200.png
+image: /img/security-headers400x200.jpg
 tags: hardening HTTP security headers webserver Cloudflare Worker Strict-Transport-Security Content-Security-Policy Permissions-Policy Referrer-Policy X-Content-Type-Options X-Frame-Options
+toc: true
+toc_title: Index
 category: Security
 ---
 
