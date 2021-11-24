@@ -65,3 +65,25 @@ div.highlight {
 .footer p {
     color: $secondary;
 }
+
+a.link {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+  }
+a.link:link, a:visited {
+    color: black;
+}
+  a.link:after {
+    content: "";
+    position: absolute;
+    left:0;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width .3s ease-in-out;
+  }
+  a.link:hover:after {
+    width: 100%;
+  }

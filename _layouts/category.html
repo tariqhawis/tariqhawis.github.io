@@ -10,7 +10,7 @@ layout: default
 
   {% for post in site.categories[cat_name] %}
   <div class="column is-half">
-    <a href="{{ Linux.url | relative_url }}">
+    <a href="{{ post.url | relative_url }}">
  {% include post-card.html cat=post %}
 </a>
 </div>
