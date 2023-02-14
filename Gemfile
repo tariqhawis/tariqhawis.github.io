@@ -1,6 +1,6 @@
 source "https://rubygems.org"
 gem "bulma-clean-theme"
-gem "github-pages", ">= 226", group: :jekyll_plugins
+gem "github-pages", ">= 227", group: :jekyll_plugins
 group :jekyll_plugins do
   gem "jekyll-feed"
   gem "jekyll-sitemap"
