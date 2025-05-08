@@ -2,6 +2,9 @@
 layout: post
 hero_title: How PBAC with OPA & GitOps Secures Financial Data in Modern Banking Apps
 title: How PBAC with OPA & GitOps Secures Financial Data in Modern Banking Apps
+description: What is Man-in-The-Middle Attack? How it's implemented? And how to prevent it.
+summary: |-
+  Man in The Middle Attack is one of the most dangerous attacks, you will learn what is it, the known techniques, and implementing the attack on a real Minecraft PI Server using Kali Linux and Ettercap tool
 permalink: /:title/
 #hero_image: /img/secure-website-hero.webp
 #hero_height: is-large
@@ -36,8 +39,8 @@ Imagine a Transaction Monitoring Service running on AKS (Azure Kubernetes Servic
 
 ## RBAC vs Fine-Grained PBAC
 
-Traditional RBAC assigns permissions to coarse roles (“Teller”, “Manager”, “Vendor_Analyst”). That model is inflexible: roles quickly proliferate as you try to cover every department or use case. By contrast, Policy-Based Access Control (PBAC) (often implemented as ABAC) makes decisions dynamically using rules and attributes ￼. Instead of “Alice is a Manager, so she sees everything in Finance,” a PBAC rule might say “allow access if user.department == Finance and resource.classification != ‘Top Secret’ and it’s between 9am–6pm.” This lets the bank express rich conditions: for example, “Deny a vendor account from querying production customer PII after hours” or “Allow a branch manager to approve loans only for their own branch” – without creating dozens of fixed roles. In effect, PBAC provides fine-grained authorization: policies can combine user attributes (department, role, tenure), resource tags (data sensitivity, project), and environmental context (network location, time, risk score) ￼ ￼.
-• _Example:_ An Azure AD rule-condition might enforce that “John can only read customer records if the record’s tag = ProjectX” ￼. Similarly, OPA policies in Rego can reference claims like input.user.roles or input.resource.tags to allow or deny each API call.
+Traditional RBAC assigns permissions to coarse roles (“Teller”, “Manager”, “Vendor*Analyst”). That model is inflexible: roles quickly proliferate as you try to cover every department or use case. By contrast, Policy-Based Access Control (PBAC) (often implemented as ABAC) makes decisions dynamically using rules and attributes ￼. Instead of “Alice is a Manager, so she sees everything in Finance,” a PBAC rule might say “allow access if user.department == Finance and resource.classification != ‘Top Secret’ and it’s between 9am–6pm.” This lets the bank express rich conditions: for example, “Deny a vendor account from querying production customer PII after hours” or “Allow a branch manager to approve loans only for their own branch” – without creating dozens of fixed roles. In effect, PBAC provides fine-grained authorization: policies can combine user attributes (department, role, tenure), resource tags (data sensitivity, project), and environmental context (network location, time, risk score) ￼ ￼.
+• \_Example:* An Azure AD rule-condition might enforce that “John can only read customer records if the record’s tag = ProjectX” ￼. Similarly, OPA policies in Rego can reference claims like input.user.roles or input.resource.tags to allow or deny each API call.
 • _Zero Trust Alignment:_ PBAC aligns with zero-trust principles by never trusting a user by default – every request is evaluated on its attributes. This helps satisfy regulatory requirements (SoX/PCI/DORA) by ensuring only necessary access is granted.
 
 Overall, PBAC (policy-as-code) decouples authorization logic from applications ￼. Policy rules are managed separately (in Git repos) and evaluated at runtime by a policy engine. This enables continuous audits and rapid updates: change a Rego rule in Git, and the new policy takes effect across all services.
