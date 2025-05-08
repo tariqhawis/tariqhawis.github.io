@@ -6,7 +6,7 @@ permalink: /:title/
 #hero_height: is-large
 #image: /img/secure400x200.jpg
 tags: PBAC policy-as-code OPA GitOps Kubernetes Azure CI/CD
-category: IAM
+category: Security
 ---
 
 In today’s cloud-native banking environments, securing access to sensitive financial data requires more than traditional role-based controls. This blog explores how Policy-Based Access Control (PBAC), enforced using Open Policy Agent (OPA) and Rego, enables fine-grained, context-aware authorization across internal and vendor-facing applications. Set within a real-world scenario of a bank using Azure, Kubernetes, GitLab, and GitOps, we demonstrate how dynamic policies improve compliance, reduce risk, and streamline access governance. Learn how to architect, implement, and audit PBAC in a zero-trust environment.
